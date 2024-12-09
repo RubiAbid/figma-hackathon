@@ -3,15 +3,17 @@ import Image from 'next/image'
 
 const ContainerFluid = () => {
   return (
-    <div className="flex items-center justify-between w-[704px] h-[682px]">
+    <div className="flex items-center justify-between w-[1440px] h-[682px]">
       {/* Image */}
-      <div className="relative">
+      <div className="relative w-[725px] h-[682px] left-[-137px] top-[-24px]">
         <Image 
           src="/asian-woman.png" 
           alt="Description of the image"
-          width={672}
-          height={682}
-          layout="responsive" // Changed to responsive for better scaling
+          width={704}
+          height={774}
+          layout="responsive" 
+          className="object-cover w-full h-full" 
+
         />
       </div>
 

@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="w-full bg-[#FAFAFA]">
       {/* Top section with logo and social media icons */}
-      <div className="flex justify-center items-center py-6">
-        <div className="flex flex-row items-center max-w-screen-xl w-full px-6">
+      <div className="flex justify-center items-center py-9">
+        <div className="flex flex-row items-center max-w-screen-xl w-[1100px] px-6">
           <div className="w-[108px] h-[32px]">
             <h3 className="font-[Montserrat] font-bold text-[24px] leading-[32px] tracking-[0.1px] text-[#252B42]">
               Bandage
@@ -28,7 +28,7 @@ const Footer = () => {
 
             <div className="w-[24px] h-[24px]">
               <Image
-                src="/twitter.svg"  // Ensure correct path
+                src="/ant-design_twitter-outlined.png"  // Ensure correct path
                 alt="Twitter Logo"
                 width={24}
                 height={24}
@@ -38,7 +38,7 @@ const Footer = () => {
 
             <div className="w-[24px] h-[24px]">
               <Image
-                src="/instagram.svg"  // Ensure correct path
+                src="/instagram.png"  // Ensure correct path
                 alt="Instagram Logo"
                 width={24}
                 height={24}
@@ -51,7 +51,7 @@ const Footer = () => {
 
       {/* Company Info, Legal, Features, Resources section */}
       <div className="bg-white py-8 px-6">
-        <div className="flex justify-center gap-[40px] flex-wrap max-w-screen-xl mx-auto">
+        <div className="flex justify-center gap-[40px] flex-nowrap max-w-screen-xl mx-auto w-[1100px]">
           {/* Company Info Section */}
           <div className="flex flex-col items-start gap-[20px] w-[300px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] tracking-[0.1px] text-[#252B42]">
@@ -124,7 +124,7 @@ const Footer = () => {
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] tracking-[0.1px] text-[#252B42]">
               Get In Touch
             </h5>
-            <div className="relative w-full flex items-center border border-[#428cdb] pl-2 ">
+            <div className="relative w-[220px]  flex items-center border border-[#428cdb] pl-8">
               <input 
                 type="email" 
                 className="w-full bg-[#F9F9F9] border-none rounded-l-[5px] box-border "
@@ -145,7 +145,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="w-full bg-[#FAFAFA] py-4 flex justify-center items-center">
-        <p className="font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">
+        <p className="font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-[#737373] w-[1100px]">
           Made With Love By Finland. All Rights Reserved.
         </p>
       </div>

@@ -15,7 +15,7 @@ const NavbarSection = () => {
       </div>
       
       {/* Navigation buttons */}
-      <div className="flex flex-row items-center justify-center gap-[15px] w-[361px] h-[25px] mx-auto mt-[20px] transform -translate-y-[12px]">
+      <div className="flex flex-row items-center justify-start gap-[15px] w-[361px] h-[25px] mx-auto mt-[20px] transform -translate-y-[12px]">
         <a className="w-[43px] h-[24px]">Home</a>
 
         {/* Shop Button */}
@@ -36,7 +36,7 @@ const NavbarSection = () => {
         <button className="flex items-center gap-2 p-3 w-[166px] h-[54px]">
           <div className="w-[20px] h-[20px] transform -translate-y-[5px]">
             <Image
-              src="/UserLogin.png" // Path from the public folder
+              src="/Vector (5).png" // Path from the public folder
               alt="User Logo"
               width={20} // Set the width of the image
               height={20} // Set the height of the image
@@ -54,9 +54,9 @@ const NavbarSection = () => {
           {/* Search Button */}
           <div className="flex flex-row items-center p-[23px] gap-[5px] absolute w-[46px] h-[46px] left-[180px] top-0 rounded-[37px]">
             <button className="flex flex-row items-center p-[0px] gap-5 absolute w-[56px] h-[46px] left-0 top-0 rounded-[37px]">
-              <div className="w-[16px] h-[16px] flex-none order-0 flex-grow-0">
+              <div className="w-[42px] h-[42px] flex-none order-0 flex-grow-0">
                 <Image
-                  src="/Search bar.png"  // Path from the public folder
+                  src="/btn-32.png"  // Path from the public folder
                   alt="search Logo"
                   width={16} // Set the width of the image
                   height={16} // Set the height of the image
@@ -67,34 +67,28 @@ const NavbarSection = () => {
 
             {/* Cart Button */}
             <div className="flex items-center gap-5">
-              <button className="flex flex-row items-center p-[15px] gap-[5px] w-[56px] h-[46px] rounded-[37px]">
-                <div className="w-[16px] h-[16px] flex-none order-0 flex-grow-0 ml-2">
-                  <Image
-                    src="/cart.svg"  // Path from the public folder
-                    alt="Cart Logo"
-                    width={16} // Set the width of the image
-                    height={16} // Set the height of the image
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <div className="w-[5px] h-[16px] text-center text-[#23A6F0] text-[12px] leading-[16px] font-normal tracking-[0.2px]">
-                  1
-                </div>
-              </button>
+            <button className="flex flex-row items-center p-[15px] gap-[5px] w-[56px] h-[46px] rounded-[37px]">
+  <div className="w-[42px] h-[42px] flex-none order-0 flex-grow-0 ml-4">
+    <Image
+      src="/btn-32 (1).png"  // Path from the public folder
+      alt="Cart Logo"
+      width={16} // Increased width
+      height={16} // Increased height
+      className="w-full h-full object-contain"
+    />
+  </div>
+</button>
 
               {/* Favourites Button */}
               <button className="flex items-center gap-1.5 p-3 w-14 h-[46px] rounded-[37px]">
-                <div className="w-[16px] h-[16px] flex-none order-0 flex-grow-0">
+                <div className="w-[42px] h-[42px] flex-none order-0 flex-grow-0">
                   <Image
-                    src="/Favourites.png"  // Path from the public folder
+                    src="/btn-32 (2).png"  // Path from the public folder
                     alt="heart Logo"
                     width={16} // Set the width of the image
                     height={16} // Set the height of the image
                     className="w-full h-full object-contain"
                   />
-                </div>
-                <div className="w-[5px] h-[16px] text-[12px] leading-[16px] text-center text-[#23A6F0] font-normal tracking-[0.2px] flex-none order-1">
-                  1
                 </div>
               </button>
             </div>
