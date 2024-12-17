@@ -9,7 +9,8 @@ const ShopFeature = () => {
         {/* Product 1 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-            <Image src="product-cover-5 (1).png" alt="Product Cover" className="w-full h-full object-cover" />
+            <Image src="/product-cover-5 (1).png" alt="Product Cover"  width={500} // Replace with the actual width of your image
+    height={427} className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -30,7 +31,8 @@ const ShopFeature = () => {
         {/* Product 2 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="fixed-height (8).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/fixed-height (8).png" alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -51,7 +53,8 @@ const ShopFeature = () => {
         {/* Product 3 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="fixed-height (9).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/fixed-height (9).png"  alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -72,7 +75,8 @@ const ShopFeature = () => {
         {/* Product 4 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="fixed-height (10).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/fixed-height (10).png" alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -104,7 +108,8 @@ const ShopFeature = () => {
         {/* Product 5 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="product-cover-5 (2).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/product-cover-5 (2).png" alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -125,7 +130,8 @@ const ShopFeature = () => {
         {/* Product 6 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="product-cover-5 (3).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/product-cover-5 (3).png" alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -146,7 +152,8 @@ const ShopFeature = () => {
         {/* Product 7 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="fixed-height (11).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/fixed-height (11).png" alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -167,7 +174,8 @@ const ShopFeature = () => {
         {/* Product 8 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="fixed-height (12).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/fixed-height (12).png" alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -191,7 +199,8 @@ const ShopFeature = () => {
         {/* Product 9 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="product-cover-5 (4).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/product-cover-5 (4).png" alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -212,7 +221,8 @@ const ShopFeature = () => {
         {/* Product 10 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="fixed-height (13).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/fixed-height (13).png" alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -233,7 +243,8 @@ const ShopFeature = () => {
         {/* Product 11 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="fixed-height (14).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/fixed-height (14).png" alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">
@@ -254,7 +265,8 @@ const ShopFeature = () => {
         {/* Product 12 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
-          <Image src="fixed-height (15).png" alt="Product Cover" className="w-full h-full object-cover" />
+          <Image src="/fixed-height (15).png" alt="Product Cover" width={500} 
+    height={427}  className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col items-center p-[25px_25px_35px] gap-[10px] w-full h-[188px]">
             <h5 className="font-montserrat font-bold text-[16px] leading-[24px] text-center text-[#252B42]">

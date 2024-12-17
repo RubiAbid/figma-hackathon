@@ -1,34 +1,48 @@
-'use client'; // Add this at the very top of the file
+'use client'; 
 
 import React from 'react';
 import Link from 'next/link'; // Import Link from Next.js
 import Image from 'next/image'; // Import Image component from Next.js
 
+
 const NavbarSection = () => {
   return (
-    <div className="relative w-full h-[58px] grid items-center">
+    <div className="relative w-full h-[58px] pl-4 grid items-center">
       {/* Bandage section */}
-      <div className="absolute w-[187px] h-[58px] left-[calc(50%-187px/2-587px)] top-0">
-        <div className="absolute w-[108px] h-[32px] left-0 top-[13px] text-[#252B42] font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px]">
+      <div className="absolute w-[187px] h-[58px]  left-[calc(50%-187px/2-587px)] top-0">
+        <div className="absolute pl-[44px] w-[108px] h-[32px] left-0 top-[13px] text-[#252B42] font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px]">
           Bandage
         </div>
       </div>
       
       {/* Navigation buttons */}
-      <div className="flex flex-row items-center justify-start gap-[15px] w-[361px] h-[25px] mx-auto mt-[20px] transform -translate-y-[12px]">
-        <a className="w-[43px] h-[24px]">Home</a>
+      <div className="flex flex-row items-center justify-start gap-[15px] w-[361px] h-[25px] mx-auto mt-[20px] transform -translate-y-[12px] -translate-x-[25px]">
+      <a href="#" className="w-[43px] h-[24px] flex justify-center items-center  text-blacl text-[14px] font-montserrat font-bold rounded-[5px]">
+  Home
+</a>
 
-        {/* Shop Button */}
-        <Link href="/shop">
-          <button className="w-[40px] h-[25px] text-black font-montserrat font-bold text-[14px] rounded-[5px] flex items-center justify-center">
+<Link href="/shopping" className="block w-full px-4 py-2 text-sm text-black ">
             Shop
-          </button>
-        </Link>
+          </Link>
 
-        <button className="w-[45px] h-[24px]">List</button>
-        <button className="w-[33px] h-[24px]">Blog</button>
+
+          <Link href="/about">
+        <button className="w-[45px] h-[24px] ">About</button>
+      </Link>
+
+      <Link href="/HomeApppliances">
+  <button className="w-[33px] h-[24px]">Blog</button>
+</Link>
+        <Link href="/contactUs">
         <button className="w-[58px] h-[24px]">Contact</button>
-        <button className="w-[44px] h-[24px]">Pages</button>
+      </Link>
+      <Link href="/pricing">
+  <button className="w-[44px] h-[24px]">Pages</button>
+</Link>
+<Link href="/Team">
+  <button className="w-[44px] h-[24px]">Team</button>
+</Link>
+
       </div>
 
       {/* Login / Register button */}

@@ -1,10 +1,11 @@
 import React from 'react';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
 
-    <div className="relative">
-      <img 
+    <div className="relative overflow-visible">
+       <Image 
         src="/heroSection.jpeg" 
         alt="Description of the image" 
         className="w-[1440px] h-[716px] object-cover"
