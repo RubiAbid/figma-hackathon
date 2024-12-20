@@ -43,8 +43,8 @@ const About = () => {
             <span className="w-[137px] h-[22px] px-1 font-montserrat font-bold text-[14px] leading-[22px] tracking-[0.2px] text-[#FFFFFF]">
               Become a member
             </span>
-            <Image src="/arrow.png" alt="Arrow Icon" width="12" height="10" className="w-[12px] h-[10px]" />
-          </button>
+            <Image src="/arrow.png" alt="Arrow Icon" width={12} height={10} className="w-[12px] h-[10px]" />
+            </button>
         </div>
       </div>
 
@@ -146,64 +146,138 @@ const About = () => {
 
 
 
-  <div className="flex flex-row items-center transform translate-x-[80px] gap-[30px] w-full max-w-[1034px] h-[383px] mt-[-100px]">
+<div className="flex flex-row items-center transform translate-x-[80px] gap-[30px] w-full max-w-[1034px] h-[383px] mt-[-100px]">
   <div className="flex flex-col -translate-y-[500px] items-center w-[316px] h-[383px] bg-white">
-  <Image src="team-1-user-1.jpg" alt="Image description" className="w-full h-[231px] object-cover" />
+    <Image 
+      src="/team-1-user-1.jpg" 
+      alt="Image description" 
+      className="w-full h-[231px] object-cover" 
+      width={316} 
+      height={231} 
+    />
     <div className="flex flex-col items-center justify-start w-full h-[152px] text-center p-2">
       <h5 className="font-montserrat font-bold text-[16px] text-[#252B42]">Username</h5>
       <h6 className="font-montserrat font-normal text-[14px] text-[#737373]">Profession</h6>
       <div className="flex gap-2 mt-[5px]"> 
         <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
-        <Image src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full object-contain" />
+          <Image 
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+            alt="Facebook" 
+            className="w-full h-full object-contain" 
+            width={24} 
+            height={24} 
+          />
         </div>
         <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
-        <Image src="instagram.png" alt="Instagram" className="w-full h-full object-contain" />
+          <Image 
+            src="/instagram.png" 
+            alt="Instagram" 
+            className="w-full h-full object-contain" 
+            width={24} 
+            height={24} 
+          />
         </div>
         <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
-        <Image src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full object-contain" />
+          <Image 
+            src="/ant-design_twitter-outlined.png" 
+            alt="Twitter" 
+            className="w-full h-full object-contain" 
+            width={24} 
+            height={24} 
+          />
         </div>
       </div>
     </div>
   </div>
 
-  <div className="flex flex-col -translate-y-[500px] items-center w-[316px] h-[383px] bg-white">
-  <Image src="media.png" alt="Image description" className="w-full h-[231px] object-cover" />
-    <div className="flex flex-col items-center justify-start w-full h-[152px] text-center p-2">
-      <h5 className="font-montserrat font-bold text-[16px] text-[#252B42]">Username</h5>
-      <h6 className="font-montserrat font-normal text-[14px] text-[#737373]">Profession</h6>
-      <div className="flex gap-2 mt-[5px]"> 
-        <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
-        <Image src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full object-contain" />
-        </div>
-        <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
-        <Image src="instagram.png" alt="Instagram" className="w-full h-full object-contain" />
-        </div>
-        <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
-        <Image src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full object-contain" />
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div className="flex flex-col -translate-y-[500px] items-center w-[316px] h-[383px] transfer  bg-white">
-  <Image src="media (1).png" alt="Image description" className="w-full h-[231px] object-cover" />
-    <div className="flex flex-col items-center justify-start w-full h-[152px] text-center p-2">
-      <h5 className="font-montserrat font-bold text-[16px] text-[#252B42]">Username</h5>
-      <h6 className="font-montserrat font-normal text-[14px] text-[#737373]">Profession</h6>
-      <div className="flex gap-2 mt-[5px]"> 
-        <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
-        <Image src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full object-contain" />
-        </div>
-        <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
-        <Image src="instagram.png" alt="Instagram" className="w-full h-full object-contain" />
-        </div>
-        <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
-        <Image src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full object-contain" />
-        </div>
+
+  <div className="flex flex-col -translate-y-[500px] items-center w-[316px] h-[383px] bg-white">
+  <Image 
+    src="/media.png" 
+    alt="Image description" 
+    className="w-full h-[231px] object-cover" 
+    width={316} 
+    height={231} 
+  />
+  <div className="flex flex-col items-center justify-start w-full h-[152px] text-center p-2">
+    <h5 className="font-montserrat font-bold text-[16px] text-[#252B42]">Username</h5>
+    <h6 className="font-montserrat font-normal text-[14px] text-[#737373]">Profession</h6>
+    <div className="flex gap-2 mt-[5px]"> 
+      <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
+        <Image 
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+          alt="Facebook" 
+          className="w-full h-full object-contain" 
+          width={24} 
+          height={24} 
+        />
+      </div>
+      <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
+        <Image 
+          src="/instagram.png" 
+          alt="Instagram" 
+          className="w-full h-full object-contain" 
+          width={24} 
+          height={24} 
+        />
+      </div>
+      <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
+        <Image 
+          src="/ant-design_twitter-outlined.png" 
+          alt="Twitter" 
+          className="w-full h-full object-contain" 
+          width={24} 
+          height={24} 
+        />
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+<div className="flex flex-col -translate-y-[500px] items-center w-[316px] h-[383px] transform bg-white">
+  <Image src="/media (1).png" alt="Image description" className="w-full h-[231px] object-cover" width={316} height={231} />
+  <div className="flex flex-col items-center justify-start w-full h-[152px] text-center p-2">
+    <h5 className="font-montserrat font-bold text-[16px] text-[#252B42]">Username</h5>
+    <h6 className="font-montserrat font-normal text-[14px] text-[#737373]">Profession</h6>
+    <div className="flex gap-2 mt-[5px]"> 
+      <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
+        <Image 
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+          alt="Facebook" 
+          className="w-full h-full object-contain" 
+          width={24} 
+          height={24} 
+        />
+      </div>
+      <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
+        <Image 
+          src="/instagram.png" 
+          alt="Instagram" 
+          className="w-full h-full object-contain" 
+          width={24} 
+          height={24} 
+        />
+      </div>
+      <div className="w-[24px] h-[24px] flex-none order-0 flex-grow-0">
+        <Image 
+          src="/ant-design_twitter-outlined.png" 
+          alt="Twitter" 
+          className="w-full h-full object-contain" 
+          width={24} 
+          height={24} 
+        />
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
 
 
 
@@ -221,26 +295,29 @@ const About = () => {
 
   </div>
 
+
+
+
   <div className="w-full flex flex-wrap justify-center gap-4">
-    <div className="w-[103px] h-[34px]">
-    <Image src="/vector.png" alt="Vector" className="w-full h-full object-contain" />
-    </div>
-    <div className="w-[103px] h-[34px]">
-    <Image src="/fa-brands-2.png" alt="Brand 2" className="w-full h-full object-contain" />
-    </div>
-    <div className="w-[103px] h-[34px]">
-    <Image src="/fa-brands-3.png" alt="Brand 3" className="w-full h-full object-contain" />
-    </div>
-    <div className="w-[103px] h-[34px]">
-    <Image src="/fa-brands-4.png" alt="Brand 4" className="w-full h-full object-contain" />
-    </div>
-    <div className="w-[103px] h-[34px]">
-    <Image src="/fa.png" alt="Brand 5" className="w-full h-full object-contain" />
-    </div>
-    <div className="w-[103px] h-[34px]">
-    <Image src="/faa.png" alt="Brand 6" className="w-full h-full object-contain" />
-    </div>
+  <div className="w-[103px] h-[34px]">
+    <Image src="/vector.png" alt="Vector" width={103} height={34} className="object-contain" />
   </div>
+  <div className="w-[103px] h-[34px]">
+    <Image src="/fa-brands-2.png" alt="Brand 2" width={103} height={34} className="object-contain" />
+  </div>
+  <div className="w-[103px] h-[34px]">
+    <Image src="/fa-brands-3.png" alt="Brand 3" width={103} height={34} className="object-contain" />
+  </div>
+  <div className="w-[103px] h-[34px]">
+    <Image src="/fa-brands-4.png" alt="Brand 4" width={103} height={34} className="object-contain" />
+  </div>
+  <div className="w-[103px] h-[34px]">
+    <Image src="/fa.png" alt="Brand 5" width={103} height={34} className="object-contain" />
+  </div>
+  <div className="w-[103px] h-[34px]">
+    <Image src="/faa.png" alt="Brand 6" width={103} height={34} className="object-contain" />
+  </div>
+</div>
 </div>
 
 
@@ -261,10 +338,10 @@ const About = () => {
         Button
       </button>
     </div>
+    <div className="absolute right-0 top-0 bottom-[-3px] w-[45%]">
+  <Image src="/sidepic.png" alt="Image description" width={500} height={300} className="w-full h-full object-cover" />
+</div>
 
-    <div className="absolute right-0 top-0 bottom-[-3px]  w-[45%]">
-    <Image src="sidepic.png" alt="Image description" className="w-full h-full object-cover" />
-    </div>
   </div>
 </div>
  {/* Footer */}

@@ -30,23 +30,55 @@ const page = () => {
     {/* PNG Image on the Left */}
     <div className="relative w-[506px] h-[546px] left-0 top-0 rounded-[5px]">
   {/* Carousel Image */}
-  <img src="carousel-inner.png" className="w-[506px] h-[430px]" alt="Carousel Image" />
+  <Image 
+  src="/carousel-inner.png" 
+  alt="Carousel Image" 
+  width={506} 
+  height={430} 
+  className="w-[506px] h-[430px]" 
+/>
 
-  {/* Chevron Left Image */}
-  <div className="absolute w-[24px] h-[44.47px] translate-y-[-206px] right-[10px] rotate-[180deg]">
-    <Image src="ChevronLeft.png" alt="Chevron Left" className="w-full h-full" />
-  </div>
+ {/* Chevron Left Image */}
+<div className="absolute w-[24px] h-[44.47px] translate-y-[-206px] right-[10px] rotate-[180deg]">
+  <Image 
+    src="/ChevronLeft.png" 
+    alt="Chevron Left" 
+    width={24} 
+    height={44.47} 
+    className="w-full h-full" 
+  />
+</div>
 
-  <div className="absolute w-[24px] h-[44.47px] translate-y-[-200px] left-[10px]">
-  <Image  src="ChevronLeft.png" alt="Chevron Left" className="w-full h-full" />
-  </div>
-</div> 
-    {/* JPG Images at the Bottom */}
-    <div className="flex gap-[15px] absolute bottom-0 left-0">
-    <Image  src="single-product-1-thumb-2.jpg" className="w-[100px] h-[75px]" alt="Product Image 1" />
-    <Image  src="single-product-1-thumb-1.jpg" className="w-[100px] h-[75px]" alt="Product Image 2" />
-    </div>
-  </div>
+<div className="absolute w-[24px] h-[44.47px] translate-y-[-200px] left-[10px]">
+  <Image 
+    src="/ChevronLeft.png" 
+    alt="Chevron Left" 
+    width={24} 
+    height={44.47} 
+    className="w-full h-full" 
+  />
+</div>
+
+{/* JPG Images at the Bottom */}
+<div className="flex gap-[15px] absolute bottom-0 left-0">
+  <Image 
+    src="/single-product-1-thumb-2.jpg" 
+    className="w-[100px] h-[75px]" 
+    alt="Product Image 1" 
+    width={100} 
+    height={75} 
+  />
+  <Image 
+    src="/single-product-1-thumb-1.jpg" 
+    className="w-[100px] h-[75px]" 
+    alt="Product Image 2" 
+    width={100} 
+    height={75} 
+  />
+</div>
+</div>
+</div>
+
   {/* Floating Text and Stars beside Image */}
   <div className="flex flex-col items-start w-[510px] h-[471px] pl-[30px] gap-[10px]">
     {/* Heading */}
@@ -104,17 +136,38 @@ const page = () => {
   </button>
   {/* First Image */}
   <div className="box-border w-[40px] h-[40px] bg-[#FFFFFF] border-[1px] border-[#E8E8E8] rounded-full flex items-center justify-center">
-    <img src="icn favorite.png" className="w-[20px] h-[20px]" alt="Favorite Icon" />
-  </div>
+  <Image 
+    src="/icn favorite.png"  // Ensure the image is in the public directory
+    className="w-[20px] h-[20px]" 
+    alt="Favorite Icon" 
+    width={20}  // Added width and height attributes for optimization
+    height={20} 
+  />
+</div>
+
 
   {/* Second Image */}
   <div className="box-border w-[40px] h-[40px] bg-[#FFFFFF] border-[1px] border-[#E8E8E8] rounded-full flex items-center justify-center">
-  <Image  src="icn favorite (1).png" className="w-[20px] h-[20px]" alt="Favorite Icon 1" />
-  </div>
-   {/* Third Image */}
-   <div className="box-border w-[40px] h-[40px] bg-[#FFFFFF] border-[1px] border-[#E8E8E8] rounded-full flex items-center justify-center">
-   <Image  src="icn favorite (2).png" className="w-[20px] h-[20px]" alt="Favorite Icon 3" />
-  </div>
+  <Image 
+    src="/icn favorite (1).png" 
+    className="w-[20px] h-[20px]" 
+    alt="Favorite Icon 1" 
+    width={20} 
+    height={20} 
+  />
+</div>
+
+{/* Third Image */}
+<div className="box-border w-[40px] h-[40px] bg-[#FFFFFF] border-[1px] border-[#E8E8E8] rounded-full flex items-center justify-center">
+  <Image 
+    src="/icn favorite (2).png" 
+    className="w-[20px] h-[20px]" 
+    alt="Favorite Icon 3" 
+    width={20} 
+    height={20} 
+  />
+</div>
+
 </div>
 </div>
 </div>
@@ -132,8 +185,15 @@ const page = () => {
 
     {/* Image Section with Visible Background on the Right and Bottom */}
     <div className="flex flex-col items-start w-[325px] h-[382px] bg-[rgba(196,196,196,0.2)] rounded-[5.62379px] pr-[10px] pb-[10px]">
-    <Image  src="unsplash_QANOF9iJlFs.png" alt="Image Description" className="w-full h-full object-cover rounded-[5.62379px]" />
-    </div>
+  <Image 
+    src="/unsplash_QANOF9iJlFs.png" 
+    alt="Image Description" 
+    className="w-full h-full object-cover rounded-[5.62379px]" 
+    width={325} 
+    height={382} 
+  />
+</div>
+
 
     {/* Text Section */}
     <div className="flex flex-col items-start w-[332px] h-[427px]">
@@ -158,25 +218,51 @@ const page = () => {
       </h5>
       <ul className="flex flex-col items-start gap-[10px] w-full h-[126px] mt-6">
         <li className="flex items-center gap-[20px] w-full h-[24px]">
-        <Image  src="Vector (7).png" alt="Chevron Left" className="w-[9px] h-[16px]" />
+        <Image 
+  src="/Vector (7).png" 
+  alt="Chevron Left" 
+  className="w-[9px] h-[16px]" 
+  width={9} 
+  height={16} 
+/>
           <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
             The quick fox jumps over the lazy dog
           </h5>
         </li>
         <li className="flex items-center gap-[20px]  w-full h-[24px]">
-        <Image  src="Vector (7).png" alt="Chevron Left" className="w-[9px] h-[16px]" />
-          <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
-            The quick fox jumps over the lazy dog
-          </h5>
-        </li>
-        <li className="flex items-center gap-[20px] w-full h-[24px]">
-        <Image  src="Vector (7).png" alt="Chevron Left" className="w-[9px] h-[16px]" />
-          <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
-            The quick fox jumps over the lazy dog
-          </h5>
-        </li>
-        <li className="flex items-center gap-[20px] w-full h-[24px]">
-        <Image  src="Vector (7).png" alt="Chevron Left" className="w-[9px] h-[16px]" />
+
+        <Image 
+    src="/Vector (7).png" 
+    alt="Chevron Left" 
+    className="w-[9px] h-[16px]" 
+    width={9} 
+    height={16} 
+  />
+  <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
+    The quick fox jumps over the lazy dog
+  </h5>
+</li>
+<li className="flex items-center gap-[20px] w-full h-[24px]">
+  <Image 
+    src="/Vector (7).png" 
+    alt="Chevron Left" 
+    className="w-[9px] h-[16px]" 
+    width={9} 
+    height={16} 
+  />
+  <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
+    The quick fox jumps over the lazy dog
+  </h5>
+</li>
+<li className="flex items-center gap-[20px] w-full h-[24px]">
+  <Image 
+    src="/Vector (7).png" 
+    alt="Chevron Left" 
+    className="w-[9px] h-[16px]" 
+    width={9} 
+    height={16} 
+  />
+
           <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
             The quick fox jumps over the lazy dog
           </h5>
@@ -187,19 +273,39 @@ const page = () => {
       </h5>
       <ul className="flex flex-col items-start gap-[10px] w-full h-[126px] mt-6">
         <li className="flex items-center gap-[20px] w-full h-[24px]">
-        <Image  src="Vector (7).png" alt="Chevron Left" className="w-[9px] h-[16px]" />
-          <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
-            The quick fox jumps over the lazy dog
-          </h5>
-        </li>
-        <li className="flex items-center gap-[20px]  w-full h-[24px]">
-        <Image  src="Vector (7).png" alt="Chevron Left" className="w-[9px] h-[16px]" />
-          <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
-            The quick fox jumps over the lazy dog
-          </h5>
-        </li>
-        <li className="flex items-center gap-[20px] w-full h-[24px]">
-        <Image  src="Vector (7).png" alt="Chevron Left" className="w-[9px] h-[16px]" />
+        <Image 
+    src="/Vector (7).png" 
+    alt="Chevron Left" 
+    className="w-[9px] h-[16px]" 
+    width={9} 
+    height={16} 
+  />
+  <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
+    The quick fox jumps over the lazy dog
+  </h5>
+</li>
+<li className="flex items-center gap-[20px] w-full h-[24px]">
+  <Image 
+    src="/Vector (7).png" 
+    alt="Chevron Left" 
+    className="w-[9px] h-[16px]" 
+    width={9} 
+    height={16} 
+  />
+  <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
+    The quick fox jumps over the lazy dog
+  </h5>
+</li>
+<li className="flex items-center gap-[20px] w-full h-[24px]">
+  <Image 
+    src="/Vector (7).png" 
+    alt="Chevron Left" 
+    className="w-[9px] h-[16px]" 
+    width={9} 
+    height={16} 
+  />
+
+
           <h5 className="font-montserrat font-semibold text-[14px] leading-[24px] text-[#737373]">
             The quick fox jumps over the lazy dog
           </h5>
@@ -223,7 +329,13 @@ const page = () => {
 <div className="flex flex-row  gap-[30px] w-full">
   {/* First Picture */}
   <div className="flex flex-col items-start p-0  w-[238px] h-[442px]">
-    <img src="fixed-height (16).png" className="w-[239px] h-[280px]" alt="Image 1" />
+  <Image
+  src="/fixed-height (16).png"
+  alt="Image 1"
+  className="w-[239px] h-[280px]"
+  width={239}    // Set the width in pixels
+  height={280}   // Set the height in pixels
+/>
     <div className="flex flex-col items-start p-[25px_25px_35px] gap-2.5 w-[239px]">
       <h5 className="text-[#252B42] font-bold text-[16px]">Graphic Design</h5>
       <a href="#" className="text-[#737373] font-bold text-[14px]">English Department</a>
@@ -235,7 +347,13 @@ const page = () => {
   </div>
   {/* Second Picture */}
   <div className="flex flex-col items-start p-0 w-[238px] h-[442px]">
-    <img src="fixed-height (17).png" className="w-[239px] h-[280px]" alt="Image 2" />
+  <Image
+  src="/fixed-height (17).png"
+  className="w-[239px] h-[280px]"
+  alt="Image 2"
+  width={239}
+  height={280}
+/>
     <div className="flex flex-col items-start p-[25px_25px_35px] gap-2.5 w-[239px]">
       <h5 className="text-[#252B42] font-bold text-[16px]">Graphic Design</h5>
       <a href="#" className="text-[#737373] font-bold text-[14px]">English Department</a>
@@ -247,7 +365,13 @@ const page = () => {
   </div>
   {/* Third Picture */}
   <div className="flex flex-col items-start p-0 w-[238px] h-[442px]">
-    <img src="fixed-height (18).png" className="w-[239px] h-[280px]" alt="Image 3" />
+  <Image
+  src="/fixed-height (18).png"
+  className="w-[239px] h-[280px]"
+  alt="Image 3"
+  width={239}
+  height={280}
+/>
     <div className="flex flex-col items-start p-[25px_25px_35px] gap-2.5 w-[239px]">
       <h5 className="text-[#252B42] font-bold text-[16px]">Graphic Design</h5>
       <a href="#" className="text-[#737373] font-bold text-[14px]">English Department</a>
@@ -260,7 +384,13 @@ const page = () => {
 
   {/* Fourth Picture */}
   <div className="flex flex-col items-start p-0 w-[238px] h-[442px]">
-    <img src="fixed-height (19).png" className="w-[239px] h-[280px]" alt="Image 4" />
+  <Image
+  src="/fixed-height (19).png"
+  alt="Image 4"
+  className="w-[239px] h-[280px]"
+  width={239}
+  height={280}
+/>
     <div className="flex flex-col items-start p-[25px_25px_35px] gap-2.5 w-[239px]">
       <h5 className="text-[#252B42] font-bold text-[16px]">Graphic Design</h5>
       <a href="#" className="text-[#737373] font-bold text-[14px]">English Department</a>
@@ -275,7 +405,13 @@ const page = () => {
 <div className="flex flex-row gap-[30px] transform translate-y-[-40px] w-full">
   {/* Second Image */}
   <div className="flex flex-col items-start p-0 w-[238px] h-[442px]">
-    <img src="fixed-height (20).png" className="w-[239px] h-[280px]" alt="Image 5" />
+  <Image
+  src="/fixed-height (20).png"
+  alt="Image 5"
+  className="w-[239px] h-[280px]"
+  width={239}
+  height={280}
+/>
     <div className="flex flex-col items-start p-[25px_25px_35px] gap-2.5 w-[239px]">
       <h5 className="text-[#252B42] font-bold text-[16px]">Graphic Design</h5>
       <a href="#" className="text-[#737373] font-bold text-[14px]">English Department</a>
@@ -287,7 +423,13 @@ const page = () => {
   </div>
   {/* Third Image */}
   <div className="flex flex-col items-start p-0 w-[238px] h-[442px]">
-    <img src="fixed-height (21).png" className="w-[239px] h-[280px]" alt="Image 6" />
+  <Image
+  src="/fixed-height (21).png"
+  alt="Image 6"
+  className="w-[239px] h-[280px]"
+  width={239}
+  height={280}
+/>
     <div className="flex flex-col items-start p-[25px_25px_35px] gap-2.5 w-[239px]">
       <h5 className="text-[#252B42] font-bold text-[16px]">Graphic Design</h5>
       <a href="#" className="text-[#737373] font-bold text-[14px]">English Department</a>
@@ -299,7 +441,13 @@ const page = () => {
   </div>
  {/* fourth Image */}
  <div className="flex flex-col items-start p-0 w-[238px] h-[442px]">
-    <img src="fixed-height (16).png" className="w-[239px] h-[280px]" alt="Image 6" />
+ <Image
+  src="/fixed-height (16).png"
+  alt="Image 6"
+  className="w-[239px] h-[280px]"
+  width={239}
+  height={280}
+/>
     <div className="flex flex-col items-start p-[25px_25px_35px] gap-2.5 w-[239px]">
       <h5 className="text-[#252B42] font-bold text-[16px]">Graphic Design</h5>
       <a href="#" className="text-[#737373] font-bold text-[14px]">English Department</a>
@@ -311,7 +459,13 @@ const page = () => {
   </div>
  {/* fifth Image */}
  <div className="flex flex-col items-start p-0 w-[238px] h-[442px]">
-    <img src="fixed-height (17).png" className="w-[239px] h-[280px]" alt="Image 6" />
+ <Image
+  src="/fixed-height (17).png"
+  alt="Image 6"
+  className="w-[239px] h-[280px]"
+  width={239}
+  height={280}
+/>
     <div className="flex flex-col items-start p-[25px_25px_35px] gap-2.5 w-[239px]">
       <h5 className="text-[#252B42] font-bold text-[16px]">Graphic Design</h5>
       <a href="#" className="text-[#737373] font-bold text-[14px]">English Department</a>
@@ -325,24 +479,25 @@ const page = () => {
 {/* Footer Section */}
 <div className="flex flex-col items-center translate-y-[-25px] p-0 w-[1050px] h-[200px] left-1/2 mt-[-15px] transform">
   <div className="flex gap-4">
-    <div className="w-[150px] h-[50px]">
-      <img src="/vector.png" alt="Vector" className="w-full h-full object-contain" />
-    </div>
-    <div className="w-[150px] h-[50px]">
-      <img src="/fa-brands-2.png" alt="Vector" className="w-full h-full object-contain" />
-    </div>
-    <div className="w-[150px] h-[50px]">
-      <img src="/fa-brands-3.png" alt="Vector" className="w-full h-full object-contain" />
-    </div>
-    <div className="w-[150px] h-[50px]">
-      <img src="/fa-brands-4.png" alt="Vector" className="w-full h-full object-contain" />
-    </div>
-    <div className="w-[150px] h-[50px]">
-      <img src="/fa.png" alt="Vector" className="w-full h-full object-contain" />
-    </div>
-    <div className="w-[150px] h-[50px]">
-      <img src="/faa.png" alt="Vector" className="w-full h-full object-contain" />
-    </div>
+  <div className="w-[150px] h-[50px]">
+  <Image src="/vector.png" alt="Vector" className="w-full h-full object-contain" width={150} height={50} />
+</div>
+<div className="w-[150px] h-[50px]">
+  <Image src="/fa-brands-2.png" alt="Vector" className="w-full h-full object-contain" width={150} height={50} />
+</div>
+<div className="w-[150px] h-[50px]">
+  <Image src="/fa-brands-3.png" alt="Vector" className="w-full h-full object-contain" width={150} height={50} />
+</div>
+<div className="w-[150px] h-[50px]">
+  <Image src="/fa-brands-4.png" alt="Vector" className="w-full h-full object-contain" width={150} height={50} />
+</div>
+<div className="w-[150px] h-[50px]">
+  <Image src="/fa.png" alt="Vector" className="w-full h-full object-contain" width={150} height={50} />
+</div>
+<div className="w-[150px] h-[50px]">
+  <Image src="/faa.png" alt="Vector" className="w-full h-full object-contain" width={150} height={50} />
+</div>
+
   </div>
 </div>
 </div>

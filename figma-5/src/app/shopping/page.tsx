@@ -45,34 +45,53 @@ const Shop = () => {
       {/* Image Section */}
       <div className="w-full bg-[#FAFAFA] flex flex-col items-center">
         <div className="flex justify-center items-center gap-[16px] p-0 pb-[48px] w-full h-[271px] relative">
-          <div className="w-[205px] h-[223px] flex-none">
-          <Image
-              src="col-md-4 (3).png"
-              alt="Image description"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="w-[205px] h-[223px] flex-none">
-          <Image
-              src="card-item (2).png"
-              alt="Image description"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="w-[205px] h-[223px] flex-none">
-          <Image
-              src="col-md-4 (1).png"
-              alt="Image description"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="w-[205px] h-[223px] flex-none">
-          <Image
-              src="col-md-4 (2).png"
-              alt="Image description"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        <div className="w-[205px] h-[223px] flex-none">
+  <Image
+    src="/col-md-4.png" 
+    alt="Image description"
+    width={205} 
+    height={223} 
+    className="w-full h-full object-cover"
+  />
+</div>
+
+<div className="w-[205px] h-[223px] flex-none">
+  <Image
+    src="/card-item (2).png" 
+    alt="Image description"
+    width={205}
+    height={223}
+    className="w-full h-full object-cover"
+  />
+</div>
+<div className="w-[205px] h-[223px] flex-none">
+  <Image
+    src="/col-md-4 (1).png" 
+    alt="Image description"
+    width={205}
+    height={223}
+    className="w-full h-full object-cover"
+  />
+</div>
+<div className="w-[205px] h-[223px] flex-none">
+  <Image
+    src="/col-md-4 (2).png" 
+    alt="Image description"
+    width={205}
+    height={223}
+    className="w-full h-full object-cover"
+  />
+</div>
+<div className="w-[205px] h-[223px] flex-none">
+  <Image
+    src="/col-md-4 (3).png" 
+    alt="Image description"
+    width={205}
+    height={223}
+    className="w-full h-full object-cover"
+  />
+</div>
+
         </div>
       </div>
 
@@ -91,19 +110,24 @@ const Shop = () => {
 
           {/* Image Section */}
           <div className="flex items-center p-[15px] w-[50px] h-[50px] border border-[#ECECEC] rounded-[5px] box-border">
-          <Image
-              src="btn-sm-24.png"
-              alt="Image description"
-              className="w-[24px] h-[24px] object-cover"
-            />
-          </div>
-          <div className="flex items-center p-[15px] w-[50px] h-[50px] border border-[#ECECEC] rounded-[5px] box-border">
-          <Image
-              src="btn-sm-24 (1).png"
-              alt="Image description"
-              className="w-[24px] h-[24px] object-cover"
-            />
-          </div>
+  <Image
+    src="/btn-sm-24.png"  // Ensure the image is in the public directory
+    alt="Image description"
+    width={24}   // Explicit width
+    height={24}  // Explicit height
+    className="object-cover"
+  />
+</div>
+<div className="flex items-center p-[15px] w-[50px] h-[50px] border border-[#ECECEC] rounded-[5px] box-border">
+  <Image
+    src="/btn-sm-24 (1).png"  // Ensure the image is in the public directory
+    alt="Image description"
+    width={24}   // Explicit width
+    height={24}  // Explicit height
+    className="object-cover"
+  />
+</div>
+
         </div>
 
         {/* Select dropdown and Filter button */}
@@ -127,29 +151,66 @@ const Shop = () => {
         </div>
       </div>
 
-      {/* Footer Section */}
-      <div className="flex flex-col items-center p-0 w-[1050px] h-[175px] left-1/2 mt-[120px] transform">
-        <div className="flex gap-4">
-          <div className="w-[103px] h-[34px]">
-          <Image src="/vector.png" alt="Vector" className="w-full h-full object-contain" />
-          </div>
-          <div className="w-[103px] h-[34px]">
-          <Image src="/fa-brands-2.png" alt="Vector" className="w-full h-full object-contain" />
-          </div>
-          <div className="w-[103px] h-[34px]">
-          <Image src="/fa-brands-3.png" alt="Vector" className="w-full h-full object-contain" />
-          </div>
-          <div className="w-[103px] h-[34px]">
-          <Image src="/fa-brands-4.png" alt="Vector" className="w-full h-full object-contain" />
-          </div>
-          <div className="w-[103px] h-[34px]">
-          <Image src="/fa.png" alt="Vector" className="w-full h-full object-contain" />
-          </div>
-          <div className="w-[103px] h-[34px]">
-          <Image src="/faa.png" alt="Vector" className="w-full h-full object-contain" />
-          </div>
-        </div>
-      </div>
+    {/* Footer Section */}
+<div className="flex flex-col items-center p-0 w-[1050px] h-[175px] left-1/2 mt-[120px] transform">
+  <div className="flex gap-4">
+    <div className="w-[103px] h-[34px]">
+      <Image 
+        src="/vector.png" 
+        alt="Vector" 
+        width={103}   // Explicit width
+        height={34}   // Explicit height
+        className="w-full h-full object-contain" 
+      />
+    </div>
+    <div className="w-[103px] h-[34px]">
+      <Image 
+        src="/fa-brands-2.png" 
+        alt="Vector" 
+        width={103}   // Explicit width
+        height={34}   // Explicit height
+        className="w-full h-full object-contain" 
+      />
+    </div>
+    <div className="w-[103px] h-[34px]">
+      <Image 
+        src="/fa-brands-3.png" 
+        alt="Vector" 
+        width={103}   // Explicit width
+        height={34}   // Explicit height
+        className="w-full h-full object-contain" 
+      />
+    </div>
+    <div className="w-[103px] h-[34px]">
+      <Image 
+        src="/fa-brands-4.png" 
+        alt="Vector" 
+        width={103}   // Explicit width
+        height={34}   // Explicit height
+        className="w-full h-full object-contain" 
+      />
+    </div>
+    <div className="w-[103px] h-[34px]">
+      <Image 
+        src="/fa.png" 
+        alt="Vector" 
+        width={103}   // Explicit width
+        height={34}   // Explicit height
+        className="w-full h-full object-contain" 
+      />
+    </div>
+    <div className="w-[103px] h-[34px]">
+      <Image 
+        src="/faa.png" 
+        alt="Vector" 
+        width={103}   // Explicit width
+        height={34}   // Explicit height
+        className="w-full h-full object-contain" 
+      />
+    </div>
+  </div>
+</div>
+
 
       {/* Footer */}
       <Footer />

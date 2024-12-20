@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import Image from 'next/image'
 
 const page = () => {
   return (
@@ -40,7 +41,13 @@ const page = () => {
               <span className="w-[137px] h-[22px] px-1 font-montserrat font-bold text-[14px] leading-[22px] tracking-[0.2px] text-[#FFFFFF]">
                 Become a member
               </span>
-              <img src="/arrow.png" alt="Arrow Icon" width="12" height="10" className="w-[12px] h-[10px]" />
+              <Image 
+  src="/arrow.png" 
+  alt="Arrow Icon" 
+  width={12} 
+  height={10} 
+  className="w-[12px] h-[10px]" 
+/>
             </button>
           </div>
         </div>
@@ -59,7 +66,13 @@ const page = () => {
             <a href="/" className="font-montserrat font-bold text-sm leading-[24px] text-center tracking-[0.2px] text-[#252B42]">
               Home
             </a>
-            <img src="icn arrow-right icn-xs.png" alt="Arrow Right" className="w-[9px] h-[16px]" />
+            <Image 
+  src="/icn arrow-right icn-xs.png" 
+  alt="Arrow Right" 
+  className="w-[9px] h-[16px]" 
+  width={9} 
+  height={16} 
+/>
             <h6 className="font-montserrat font-bold text-sm leading-[24px] text-center tracking-[0.2px] text-[#737373]">
               Team
             </h6>
@@ -69,13 +82,44 @@ const page = () => {
 
      {/* Images Section at the Bottom */}
 <div className="flex flex-col items-center justify-end w-full flex-grow mt-auto translate-y-[300px]">
-  <div className="relative w-full h-[530px]">
-    <img src="unsplash_Lks7vei-eAg.png" alt="Unsplash Image" className="w-[700px] h-[530px]" />
-    <img src="unsplash_gMsnXqILjp4.png" alt="Unsplash Image" className="w-[361px] h-[260px] transform -scale-x-100 absolute top-0 left-[710px]" />
-    <img src="unsplash_PSmDDeXaEWE.png" alt="Unsplash Image" className="w-[361px] h-[260px] transform -scale-x-100 absolute top-0 left-[1080px]" />
-    <img src="unsplash_1-aA2Fadydc.png" alt="Unsplash Image" className="w-[361px] h-[260px] transform -scale-x-100 absolute top-[270px] left-[710px]" />
-    <img src="unsplash_mcSDtbWXUZU.png" alt="Unsplash Image" className="w-[361px] h-[260px] transform -scale-x-100 absolute top-[270px] left-[1080px]" />
-  </div>
+<div className="relative w-full h-[530px]">
+  <Image 
+    src="/unsplash_Lks7vei-eAg.png" 
+    alt="Unsplash Image" 
+    className="w-[700px] h-[530px]" 
+    width={700} 
+    height={530} 
+  />
+  <Image 
+    src="/unsplash_gMsnXqILjp4.png" 
+    alt="Unsplash Image" 
+    className="w-[361px] h-[260px] transform -scale-x-100 absolute top-0 left-[710px]" 
+    width={361} 
+    height={260} 
+  />
+  <Image 
+    src="/unsplash_PSmDDeXaEWE.png" 
+    alt="Unsplash Image" 
+    className="w-[361px] h-[260px] transform -scale-x-100 absolute top-0 left-[1080px]" 
+    width={361} 
+    height={260} 
+  />
+  <Image 
+    src="/unsplash_1-aA2Fadydc.png" 
+    alt="Unsplash Image" 
+    className="w-[361px] h-[260px] transform -scale-x-100 absolute top-[270px] left-[710px]" 
+    width={361} 
+    height={260} 
+  />
+  <Image 
+    src="/unsplash_mcSDtbWXUZU.png" 
+    alt="Unsplash Image" 
+    className="w-[361px] h-[260px] transform -scale-x-100 absolute top-[270px] left-[1080px]" 
+    width={361} 
+    height={260} 
+  />
+</div>
+
 </div>
 
 
@@ -87,73 +131,137 @@ const page = () => {
   <div className="flex flex-row gap-[30px] justify-center mt-[20px]">
     {/* First Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
-      <img 
-        src="team-1-user-1 (1) 2.jpg" 
-        alt="Expert 1" 
-        className="w-[316px] h-[231px] mx-auto" 
-      />
+    <Image 
+  src="/team-1-user-1 (1) 2.jpg" 
+  alt="Expert 1" 
+  className="w-[316px] h-[231px] mx-auto" 
+  width={316} 
+  height={231} 
+/>
       <h5 className="font-montserrat font-bold text-[18px] text-[#252B42] mt-4">Username</h5>
       <p className="font-montserrat text-sm text-[#737373]">Profession</p>
 
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-4">
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="instagram.png" alt="Instagram" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full" />
-        </a>
+      <a href="#" className="w-[24px] h-[24px]">
+    <Image 
+      src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+      alt="Facebook" 
+      className="w-full h-full" 
+      width={24} 
+      height={24} 
+    />
+  </a>
+  <a href="#" className="w-[24px] h-[24px]">
+    <Image 
+      src="/instagram.png" 
+      alt="Instagram" 
+      className="w-full h-full" 
+      width={24} 
+      height={24} 
+    />
+  </a>
+  <a href="#" className="w-[24px] h-[24px]">
+    <Image 
+      src="/ant-design_twitter-outlined.png" 
+      alt="Twitter" 
+      className="w-full h-full" 
+      width={24} 
+      height={24} 
+    />
+  </a>
       </div>
     </div>
 
     {/* Second Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
-      <img 
-        src="team-1-user-2 2.jpg" 
-        alt="Expert 2" 
-        className="w-[316px] h-[231px] mx-auto" 
-      />
+    <Image 
+  src="/team-1-user-2 2.jpg" 
+  alt="Expert 2" 
+  className="w-[316px] h-[231px] mx-auto" 
+  width={316}
+  height={231}
+/>
+
       <h5 className="font-montserrat font-bold text-[18px] text-[#252B42] mt-4">Username</h5>
       <p className="font-montserrat text-sm text-[#737373]">Profession</p>
 
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-4">
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="instagram.png" alt="Instagram" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full" />
-        </a>
+      <a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+    alt="Facebook" 
+    className="w-full h-full" 
+    width={24}
+    height={24}
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/instagram.png" 
+    alt="Instagram" 
+    className="w-full h-full" 
+    width={24}
+    height={24}
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/ant-design_twitter-outlined.png" 
+    alt="Twitter" 
+    className="w-full h-full" 
+    width={24}
+    height={24}
+  />
+</a>
+
       </div>
     </div>
 
     {/* Third Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
-      <img 
-        src="team-1-user-3 2.jpg" 
-        alt="Expert 3" 
-        className="w-[316px] h-[231px] mx-auto" 
-      />
+    <Image 
+  src="/team-1-user-3 2.jpg" 
+  alt="Expert 3" 
+  className="w-[316px] h-[231px] mx-auto" 
+  width={316} 
+  height={231} 
+/>
+
       <h5 className="font-montserrat font-bold text-[18px] text-[#252B42] mt-4">Username</h5>
       <p className="font-montserrat text-sm text-[#737373]">Profession</p>
 
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-4">
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="instagram.png" alt="Instagram" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full" />
-        </a>
+      <a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+    alt="Facebook" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/instagram.png" 
+    alt="Instagram" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/ant-design_twitter-outlined.png" 
+    alt="Twitter" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+
       </div>
     </div>
   </div>
@@ -162,73 +270,139 @@ const page = () => {
   <div className="flex flex-row gap-[30px] justify-center mt-[50px]">
     {/* Fourth Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
-      <img 
-        src="team-1-user-1 (2).jpg" 
-        alt="Expert 4" 
-        className="w-[316px] h-[231px] mx-auto" 
-      />
+    <Image 
+  src="/team-1-user-1 (2).jpg" 
+  alt="Expert 4" 
+  className="w-[316px] h-[231px] mx-auto" 
+  width={316} 
+  height={231} 
+/>
+
       <h5 className="font-montserrat font-bold text-[18px] text-[#252B42] mt-4">Username</h5>
       <p className="font-montserrat text-sm text-[#737373]">Profession</p>
 
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-4">
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="instagram.png" alt="Instagram" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full" />
-        </a>
+      <a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+    alt="Facebook" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/instagram.png" 
+    alt="Instagram" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/ant-design_twitter-outlined.png" 
+    alt="Twitter" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+
       </div>
     </div>
 
     {/* Fifth Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
-      <img 
-        src="team-1-user-2 (1).jpg" 
-        alt="Expert 5" 
-        className="w-[316px] h-[231px] mx-auto" 
-      />
+    <Image 
+  src="/team-1-user-2 (1).jpg" 
+  alt="Expert 5" 
+  className="w-[316px] h-[231px] mx-auto" 
+  width={316} 
+  height={231} 
+/>
+
       <h5 className="font-montserrat font-bold text-[18px] text-[#252B42] mt-4">Username</h5>
       <p className="font-montserrat text-sm text-[#737373]">Profession</p>
 
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-4">
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="instagram.png" alt="Instagram" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full" />
-        </a>
+      <a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+    alt="Facebook" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/instagram.png" 
+    alt="Instagram" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/ant-design_twitter-outlined.png" 
+    alt="Twitter" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+
       </div>
     </div>
 
     {/* Sixth Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
-      <img 
-        src="team-1-user-3 (1).jpg" 
-        alt="Expert 6" 
-        className="w-[316px] h-[231px] mx-auto" 
-      />
+    <Image 
+  src="/team-1-user-3 (1).jpg" 
+  alt="Expert 6" 
+  className="w-[316px] h-[231px] mx-auto" 
+  width={316} 
+  height={231} 
+/>
+
       <h5 className="font-montserrat font-bold text-[18px] text-[#252B42] mt-4">Username</h5>
       <p className="font-montserrat text-sm text-[#737373]">Profession</p>
 
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-4">
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="instagram.png" alt="Instagram" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full" />
-        </a>
+      <a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+    alt="Facebook" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/instagram.png" 
+    alt="Instagram" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/ant-design_twitter-outlined.png" 
+    alt="Twitter" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+
       </div>
     </div>
   </div>
@@ -238,70 +412,137 @@ const page = () => {
   <div className="flex flex-row gap-[30px] justify-center mt-[50px]">
     {/* Seventh Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
-      <img 
-        src="media (2).png" 
-        alt="Expert 7" 
-        className="w-[316px] h-[231px] mx-auto" 
-      />
+    <Image 
+  src="/media (2).png" 
+  alt="Expert 7" 
+  className="w-[316px] h-[231px] mx-auto" 
+  width={316} 
+  height={231} 
+/>
+
       <h5 className="font-montserrat font-bold text-[18px] text-[#252B42] mt-4">Username</h5>
       <p className="font-montserrat text-sm text-[#737373]">Profession</p>
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-4">
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="instagram.png" alt="Instagram" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full" />
-        </a>
+      <a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+    alt="Facebook" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/instagram.png" 
+    alt="Instagram" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/ant-design_twitter-outlined.png" 
+    alt="Twitter" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+
       </div>
     </div>
 
     {/* Eighth Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
-      <img 
-        src="team-1-user-2 (2).jpg" 
-        alt="Expert 8" 
-        className="w-[316px] h-[231px] mx-auto" 
-      />
+    <Image 
+  src="/team-1-user-2 (2).jpg" 
+  alt="Expert 8" 
+  className="mx-auto" 
+  width={316} 
+  height={231} 
+/>
+
       <h5 className="font-montserrat font-bold text-[18px] text-[#252B42] mt-4">Username</h5>
       <p className="font-montserrat text-sm text-[#737373]">Profession</p>
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-4">
+      <a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+    alt="Facebook" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/instagram.png" 
+    alt="Instagram" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+
         <a href="#" className="w-[24px] h-[24px]">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="instagram.png" alt="Instagram" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full" />
-        </a>
+  <Image 
+    src="/ant-design_twitter-outlined.png" 
+    alt="Twitter" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+
       </div>
     </div>
 
     {/* Ninth Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
-      <img 
-        src="media (3).png" 
-        alt="Expert 9" 
-        className="w-[316px] h-[231px] mx-auto" 
-      />
+    <Image 
+  src="/media (3).png" 
+  alt="Expert 9" 
+  className="mx-auto" 
+  width={316} 
+  height={231} 
+/>
+
       <h5 className="font-montserrat font-bold text-[18px] text-[#252B42] mt-4">Username</h5>
       <p className="font-montserrat text-sm text-[#737373]">Profession</p>
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-4">
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="instagram.png" alt="Instagram" className="w-full h-full" />
-        </a>
-        <a href="#" className="w-[24px] h-[24px]">
-          <img src="ant-design_twitter-outlined.png" alt="Twitter" className="w-full h-full" />
-        </a>
+      <a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+    alt="Facebook" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/instagram.png" 
+    alt="Instagram" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+<a href="#" className="w-[24px] h-[24px]">
+  <Image 
+    src="/ant-design_twitter-outlined.png" 
+    alt="Twitter" 
+    className="w-full h-full" 
+    width={24} 
+    height={24} 
+  />
+</a>
+
       </div>
     </div>
   </div>
@@ -324,31 +565,51 @@ const page = () => {
       </button>
     </div>
     <div className="flex flex-row items-center p-[10px] gap-[34px] w-[242px] h-[50px]">
-  <div className="w-[30px] h-[24.49px] flex-none">
-    <img src="ant-design_twitter-outlined.png" alt="Twitter Logo" className="w-full h-full object-contain" />
-  </div>
-  <div className="w-[30px] h-[30px] flex-none">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" className="w-full h-full object-contain" />
-  </div>
-  <div className="w-[30px] h-[30px] flex-none order-2 flex-grow-0">
-  <img src="instagram.png" alt="Instagram Logo" className="w-full h-full object-contain" />
+    <div className="w-[30px] h-[24.49px] flex-none">
+  <Image 
+    src="/ant-design_twitter-outlined.png" 
+    alt="Twitter Logo" 
+    className="w-full h-full object-contain" 
+    width={30} 
+    height={24.49} 
+  />
 </div>
+
+<div className="w-[30px] h-[30px] flex-none">
+  <Image 
+    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+    alt="Facebook Logo" 
+    className="w-full h-full object-contain" 
+    width={30} 
+    height={30} 
+  />
+</div>
+
+<div className="w-[30px] h-[30px] flex-none order-2 flex-grow-0">
+  <Image 
+    src="/instagram.png" 
+    alt="Instagram Logo" 
+    className="w-full h-full object-contain" 
+    width={30} 
+    height={30} 
+  />
+</div>
+
 <div className="w-[30px] h-[30px] flex-none order-3 flex-grow-0">
-  <img src="Vector (12).png" alt="LinkedIn Logo" className="w-full h-full object-contain" />
+  <Image 
+    src="/Vector (12).png" 
+    alt="LinkedIn Logo" 
+    className="w-full h-full object-contain" 
+    width={30} 
+    height={30} 
+  />
 </div>
-
-
 </div>
 <div className='translate-x-[30px]'>
 <Footer/>
 </div>
   </div>
 </div>
-
-
-
-
-
 </div>
 
 

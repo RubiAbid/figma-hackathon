@@ -79,17 +79,49 @@ const page = () => {
           
           {/* Social Media Links */}
           <div className="flex flex-row mt-6 items-center gap-[34px] w-[242px] h-[50px]">
-          <Image src="vector (8).png" alt="Vector" className="inset-0 top-[0.39%] bottom-[0.06%]" />
-          <Image src="vector (10).png" alt="Facebook" className="w-[22px] h-[30px] bg-black" />
-          <Image src="vector (11).png" alt="Instagram" className="w-[30px] h-[30px]" />
-          <Image src="vector (12).png" alt="LinkedIn" className="w-[30px] h-[29.88px]" />
-          </div>
+  <Image 
+    src="/vector (8).png" 
+    alt="Vector" 
+    className="inset-0 top-[0.39%] bottom-[0.06%]" 
+    width={22} 
+    height={30} 
+  />
+  <Image 
+    src="/vector (10).png" 
+    alt="Facebook" 
+    className="w-[22px] h-[30px] bg-black" 
+    width={22} 
+    height={30} 
+  />
+  <Image 
+    src="/vector (11).png" 
+    alt="Instagram" 
+    className="w-[30px] h-[30px]" 
+    width={30} 
+    height={30} 
+  />
+  <Image 
+    src="/vector (12).png" 
+    alt="LinkedIn" 
+    className="w-[30px] h-[29.88px]" 
+    width={30} 
+    height={29.88} 
+  />
+</div>
+
         </div>
 
         {/* Right Side (Image Section) */}
         <div className="w-[632px] h-[612px]">
-        <Image src="none (1).png" alt="Description" className="w-full h-full object-cover" />
-        </div>
+  <Image 
+    src="/none (1).png" 
+    alt="Description" 
+    className="w-full h-full object-cover" 
+    width={632} 
+    height={612} 
+  />
+</div>
+
       </div>
 
 
@@ -117,8 +149,15 @@ const page = () => {
 <div className="flex flex-col items-center p-[50px_40px] gap-[15px] w-[328px] h-[343px] bg-white flex-none order-0 flex-grow-0">
   {/* Icon Section */}
   <div className="w-[72px] h-[72px] flex-none order-0 flex-grow-0">
-  <Image src="vector (13).png" alt="Icon" className="w-full h-full object-contain" />
-  </div>
+  <Image 
+    src="/vector (13).png" 
+    alt="Icon" 
+    className="w-full h-full object-contain" 
+    width={72} 
+    height={72} 
+  />
+</div>
+
 
   {/* Email Section */}
   <div className="w-[216px] h-[48px] flex-none order-1 flex-grow-0">
@@ -144,8 +183,15 @@ const page = () => {
 <div className="flex flex-col items-center p-[80px_40px] gap-[15px] w-[328px] h-[403px] bg-[#252B42] flex-none order-0 flex-grow-0">
   {/* Icon Section */}
   <div className="w-[72px] h-[72px] flex-none order-0 flex-grow-0">
-  <Image src="vector (14).png" alt="Icon" className="w-full h-full object-contain" />
-  </div>
+  <Image 
+    src="/vector (14).png" 
+    alt="Icon" 
+    className="w-full h-full object-contain" 
+    width={72} 
+    height={72} 
+  />
+</div>
+
 
   {/* Email Section */}
   <div className="w-[216px] h-[48px] flex-none order-1 flex-grow-0">
@@ -172,8 +218,15 @@ const page = () => {
 <div className="flex flex-col items-center p-[50px_40px] gap-[15px] w-[328px] h-[343px] bg-white flex-none order-0 flex-grow-0">
   {/* Icon Section */}
   <div className="w-[72px] h-[72px] flex-none order-0 flex-grow-0">
-  <Image src="vector (13).png" alt="Icon" className="w-full h-full object-contain" />
-  </div>
+  <Image 
+    src="/vector (13).png" 
+    alt="Icon" 
+    className="w-full h-full object-contain" 
+    width={72} 
+    height={72} 
+  />
+</div>
+
 
   {/* Email Section */}
   <div className="w-[216px] h-[48px] flex-none order-1 flex-grow-0">
@@ -202,7 +255,13 @@ const page = () => {
 <div className="w-[1440px] h-[358px] bg-white flex-none order-2 flex-grow-0 relative">
   {/* Arrow Image */}
   <div className="absolute w-[150px] h-[45px] left-[50%] top-[966.1px] transform -translate-x-10">
-  <Image src="Arrow 2 (1).png" alt="Arrow 2" className="w-full h-full object-contain" />
+  <Image 
+    src="/Arrow 2 (1).png" 
+    alt="Arrow 2" 
+    className="w-full h-full object-contain" 
+    width={150} 
+    height={45} 
+  />
 </div>
 
 
