@@ -42,7 +42,12 @@ const page = () => {
               <span className="w-[137px] h-[22px] px-1 font-montserrat font-bold text-[14px] leading-[22px] tracking-[0.2px] text-[#FFFFFF]">
                 Become a member
               </span>
-              <Image src="/arrow.png" alt="Arrow Icon" width="12" height="10" className="w-[12px] h-[10px]" />
+              <Image 
+  src="/arrow.png" 
+  alt="Arrow Icon" 
+  width={12} 
+  height={10} 
+/>
             </button>
           </div>
         </div>
@@ -80,28 +85,28 @@ const page = () => {
           {/* Social Media Links */}
           <div className="flex flex-row mt-6 items-center gap-[34px] w-[242px] h-[50px]">
   <Image 
-    src="/vector (8).png" 
-    alt="Vector" 
+    src="/Vector(15).png" 
+    alt="twitter" 
     className="inset-0 top-[0.39%] bottom-[0.06%]" 
     width={22} 
     height={30} 
   />
   <Image 
-    src="/vector (10).png" 
+    src="facebook(2).svg" 
     alt="Facebook" 
-    className="w-[22px] h-[30px] bg-black" 
+    className="w-[22px] h-[30px]" 
     width={22} 
     height={30} 
   />
   <Image 
-    src="/vector (11).png" 
+    src="/instagram (2).svg" 
     alt="Instagram" 
     className="w-[30px] h-[30px]" 
     width={30} 
     height={30} 
   />
   <Image 
-    src="/vector (12).png" 
+    src="linkedin.svg" 
     alt="LinkedIn" 
     className="w-[30px] h-[29.88px]" 
     width={30} 
@@ -139,10 +144,6 @@ const page = () => {
       </h2>
     </div>
   </div>
-
-
-
-
   <div className="flex flex-row justify-start mt-[-33px] items-start transform translate-y-[1200px] translate-x-[250px] h-screen">
 
 {/* First Column */}
@@ -247,11 +248,6 @@ const page = () => {
   </button>
 </div>
 </div>
-
-
-
-
-
 <div className="w-[1440px] h-[358px] bg-white flex-none order-2 flex-grow-0 relative">
   {/* Arrow Image */}
   <div className="absolute w-[150px] h-[45px] left-[50%] top-[966.1px] transform -translate-x-10">
@@ -263,8 +259,6 @@ const page = () => {
     height={45} 
   />
 </div>
-
-
   {/* Content Section */}
   <div className="flex flex-col items-center p-0 gap-[36px] w-[607px] h-[188px] flex-none order-0 flex-grow-0 justify-center transform -translate-y-[-1000px] translate-x-[460px]">
     <h6 className="w-[239px] h-[24px] font-montserrat font-bold text-[16px] leading-[24px] text-center tracking-[0.1px] text-[#252B42] flex-none order-0 flex-grow-0">
@@ -274,7 +268,6 @@ const page = () => {
       Lets Talk
     </h2>
   </div>
-
   {/* Button Section */}
   <div className="flex flex-row items-start p-0 gap-[10px] w-[186px] h-[52px] flex-none order-2 flex-grow-0 transform -translate-y-[-1000px]  translate-x-[670px]">
     <button className="flex flex-col items-center p-[15px_40px] gap-[10px] w-[186px] h-[52px] bg-[#23A6F0] rounded-[5px] flex-none order-0 flex-grow-0">
@@ -283,13 +276,8 @@ const page = () => {
     <div className="flex justify-start items-center py-[67px] transform translate-x-[-750px]">
     <Footer />
   </div>
-
-  </div>
- 
-
-</div>
-
-
+ </div>
+ </div>
   </div>
     </div>
    
