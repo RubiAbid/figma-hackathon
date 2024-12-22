@@ -480,7 +480,7 @@ const page = () => {
 <div className="flex flex-col items-center translate-y-[-25px] p-0 w-[1050px] h-[200px] left-1/2 mt-[-15px] transform">
   <div className="flex gap-4">
   <div className="w-[150px] h-[50px]">
-  <Image src="/vector.png" alt="Vector" className="w-full h-full object-contain" width={150} height={50} />
+  <Image src="/Vector.png" alt="Vector" className="w-full h-full object-contain" width={150} height={50} />
 </div>
 <div className="w-[150px] h-[50px]">
   <Image src="/fa-brands-2.png" alt="Vector" className="w-full h-full object-contain" width={150} height={50} />

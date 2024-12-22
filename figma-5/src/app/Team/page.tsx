@@ -597,7 +597,7 @@ const page = () => {
 
 <div className="w-[30px] h-[30px] flex-none order-3 flex-grow-0">
   <Image 
-    src="/Vector (12).png" 
+    src="/Vector (15).png" 
     alt="LinkedIn Logo" 
     className="w-full h-full object-contain" 
     width={30} 

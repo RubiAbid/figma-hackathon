@@ -156,7 +156,7 @@ const Shop = () => {
   <div className="flex gap-4">
     <div className="w-[103px] h-[34px]">
       <Image 
-        src="/vector.png" 
+        src="/Vector.png" 
         alt="Vector" 
         width={103}   // Explicit width
         height={34}   // Explicit height

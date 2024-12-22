@@ -127,7 +127,7 @@ const About = () => {
 
   <button className="absolute w-[92.6px] h-[92.6px] bg-[#23A6F0] rounded-full flex items-center justify-center left-[calc(50%-46.3px)] top-[calc(50%-46.3px)]">
   <div className="w-[19px] h-[23px] flex items-center justify-center">
-    <Image src="/vector (6).png" alt="button icon" width={19} height={23} />
+    <Image src="/Vector (6).png" alt="button icon" width={19} height={23} />
   </div>
 </button>
 </div>
@@ -300,7 +300,7 @@ const About = () => {
 
   <div className="w-full flex flex-wrap justify-center gap-4">
   <div className="w-[103px] h-[34px]">
-    <Image src="/vector.png" alt="Vector" width={103} height={34} className="object-contain" />
+    <Image src="/Vector.png" alt="Vector" width={103} height={34} className="object-contain" />
   </div>
   <div className="w-[103px] h-[34px]">
     <Image src="/fa-brands-2.png" alt="Brand 2" width={103} height={34} className="object-contain" />

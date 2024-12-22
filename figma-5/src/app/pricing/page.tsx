@@ -249,7 +249,7 @@ const page = () => {
   <div className="flex gap-4">
     <div className="w-[103px] h-[34px]">
       <Image 
-        src="/vector.png" 
+        src="/Vector.png" 
         alt="Vector" 
         width={103}   // Explicit width
         height={34}   // Explicit height
@@ -523,7 +523,7 @@ const page = () => {
 </div>
 <div className="w-[30px] h-[30px] flex-none order-3 flex-grow-0">
   <Image 
-    src="/Vector (12).png" 
+    src="/Vector (15).png" 
     alt="LinkedIn Logo" 
     className="w-full h-full object-contain" 
     width={30} 

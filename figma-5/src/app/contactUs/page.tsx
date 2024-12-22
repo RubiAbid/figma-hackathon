@@ -151,7 +151,7 @@ const page = () => {
   {/* Icon Section */}
   <div className="w-[72px] h-[72px] flex-none order-0 flex-grow-0">
   <Image 
-    src="/vector (13).png" 
+    src="/Vector (13).png" 
     alt="Icon" 
     className="w-full h-full object-contain" 
     width={72} 
@@ -185,7 +185,7 @@ const page = () => {
   {/* Icon Section */}
   <div className="w-[72px] h-[72px] flex-none order-0 flex-grow-0">
   <Image 
-    src="/vector (14).png" 
+    src="/Vector (14).png" 
     alt="Icon" 
     className="w-full h-full object-contain" 
     width={72} 
@@ -220,7 +220,7 @@ const page = () => {
   {/* Icon Section */}
   <div className="w-[72px] h-[72px] flex-none order-0 flex-grow-0">
   <Image 
-    src="/vector (13).png" 
+    src="/Vector (13).png" 
     alt="Icon" 
     className="w-full h-full object-contain" 
     width={72} 
