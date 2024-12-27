@@ -289,7 +289,7 @@ const Page = () => {
   {/* Text Section */}
 <div className="flex flex-col items-center p-0 w-[607px] h-[188px] flex-none order-0 flex-grow-0">
   <h6 className="w-[239px] h-[24px] font-montserrat font-bold text-[16px] leading-[24px] text-center tracking-[0.1px] text-[#252B42]">
-    WE Can't WAIT TO MEET YOU
+    WE Cant WAIT TO MEET YOU
   </h6>
   <h2 className="w-[272px] h-[80px] font-montserrat font-bold text-[58px] leading-[80px] text-center tracking-[0.2px] text-[#252B42]">
     Let’s Talk

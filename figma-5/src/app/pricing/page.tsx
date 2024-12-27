@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Footer from '@/components/Footer'
 
-const page = () => {
+const Page = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -813,4 +813,4 @@ support
   )
 }
 
-export default page
+export default Page

@@ -27,7 +27,7 @@ const About = () => {
 
 {/* Hamburger Icon for Small Screens */}
 <button 
-  onClick={() => setIsMenuOpen(!isMenuOpen)} 
+  onClick={toggleMenu} 
   className="lg:hidden flex flex-col items-center justify-between w-[30px] h-[25px] space-y-2 relative z-50 sm:translate-x-[140px]"
 >
   <div className={`w-[30px] h-[5px] bg-black transition-all ${isMenuOpen ? 'transform rotate-45 translate-y-[8px]' : ''}`} />
@@ -35,9 +35,10 @@ const About = () => {
   <div className={`w-[30px] h-[5px] bg-black transition-all ${isMenuOpen ? 'transform -rotate-45 translate-y-[-8px]' : ''}`} />
 </button>
 
+
 {/* Navigation Buttons (Mobile) */}
 <div 
-  className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'} absolute top-[50px] left-[225px] w-[350px] bg-white shadow-lg z-40`}
+  className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'} absolute top-[50px] left-[225px] w-[350px] bg-white shadow-lg z-40 lg:translate-x-0 sm:translate-x-[90px]`}
 >
   <div className="flex flex-col items-center gap-4 py-4">
     <Link href="/">

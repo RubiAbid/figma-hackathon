@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 
-const page = () => {
+const Page = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -671,4 +671,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default Page;

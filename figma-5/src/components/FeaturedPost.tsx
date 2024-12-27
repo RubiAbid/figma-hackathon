@@ -49,7 +49,7 @@ const FeaturedPost = () => {
               Loudest à la Madison #1 (L&apos;integral)
             </div>
             <p className="w-[280px] h-[60px] text-[#737373] text-[14px] leading-[20px] tracking-[0.2px] font-normal mt-4">
-              We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+              We focus on ergonomics and meeting you where you work. Its only a keystroke away.
             </p>
             {/* Post Info Section */}
             <div className="flex flex-row justify-between items-center py-[15px] gap-[10px] w-full h-[46px]">
@@ -80,7 +80,7 @@ const FeaturedPost = () => {
               Loudest à la Madison #1 (L&apos;integral)
             </div>
             <p className="text-[#737373] text-[14px] leading-[20px] mt-4">
-              We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+              We focus on ergonomics and meeting you where you work. Its only a keystroke away.
             </p>
             <div className="flex flex-row justify-between items-center py-[15px]">
               <div className="text-sm">⏰ 22 April 2021</div>
@@ -110,7 +110,7 @@ const FeaturedPost = () => {
               Loudest à la Madison #1 (L&apos;integral)
             </div>
             <p className="text-[#737373] text-[14px] mt-4">
-              We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+              We focus on ergonomics and meeting you where you work. Its only a keystroke away.
             </p>
             <div className="flex flex-row justify-between items-center py-[15px]">
               <div>⏰ 22 April 2021</div>
