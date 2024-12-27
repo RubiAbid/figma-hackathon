@@ -20,122 +20,86 @@ const Shop = () => {
       {/* Navbar */}
       <NavbarSection />
       {/* SHOP heading and breadcrumb container */}
-      <div className="flex justify-between items-center w-full max-w-screen-xl mb-9">
+      <div className="flex flex-col sm:flex-row justify-between items-center w-full max-w-screen-xl mb-9 px-4 sm:px-6 md:px-8">
         {/* SHOP heading on the left */}
-        <h2 className="w-[63px] h-[32px] text-center font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px] text-[#252B42] ml-[200px]">
+        <h2 className="w-auto text-center font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px] text-[#252B42] sm:mr-[100px] translate-x-[-50px] sm:translate-x-[160px]  md:ml-[100px] lg:mt-0 mt-5">
           SHOP
         </h2>
 
         {/* Breadcrumb container on the right */}
+        <div className="flex items-center gap-2 sm:gap-2 lg:mr-40 sm:mr-[120px] mr-20 lg:mt-0 mt-5">
         <Link href="/">
-          <button className="font-montserrat s font-bold text-[14px] leading-[24px] text-center tracking-[0.2px] text-[#252B42] bg-transparent border-none translate-x-[400px]">
-            Home
-          </button>
-        </Link>
-        <div className="text-[#252B42] translate-x-[90px]"> &gt; </div>
-        <div className="font-montserrat font-bold text-[14px] leading-[24px] text-center tracking-[0.2px] text-[#BDBDBD] translate-x-[-215px]">
-  <Link href="/shopping">
-    Shop
-  </Link>
-</div>
+            <button className="font-montserrat font-bold text-[14px] leading-[24px] text-center tracking-[0.2px] text-[#252B42] bg-transparent border-none">
+              Home
+            </button>
+          </Link>
 
+          <div className="text-[#252B42]"> &gt; </div>
+          <Link href="/shopping" className="font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-[#BDBDBD]">
+            Shop
+          </Link>
+        </div>
       </div>
       
 
       {/* Image Section */}
-      <div className="w-full bg-[#FAFAFA] flex flex-col items-center">
-        <div className="flex justify-center items-center gap-[16px] p-0 pb-[48px] w-full h-[271px] relative">
-        <div className="w-[205px] h-[223px] flex-none">
-  <Image
-    src="/col-md-4.png" 
-    alt="Image description"
-    width={205} 
-    height={223} 
-    className="w-full h-full object-cover"
-  />
-</div>
-
-<div className="w-[205px] h-[223px] flex-none">
-  <Image
-    src="/card-item (2).png" 
-    alt="Image description"
-    width={205}
-    height={223}
-    className="w-full h-full object-cover"
-  />
-</div>
-<div className="w-[205px] h-[223px] flex-none">
-  <Image
-    src="/col-md-4 (1).png" 
-    alt="Image description"
-    width={205}
-    height={223}
-    className="w-full h-full object-cover"
-  />
-</div>
-<div className="w-[205px] h-[223px] flex-none">
-  <Image
-    src="/col-md-4 (2).png" 
-    alt="Image description"
-    width={205}
-    height={223}
-    className="w-full h-full object-cover"
-  />
-</div>
-<div className="w-[205px] h-[223px] flex-none">
-  <Image
-    src="/col-md-4 (3).png" 
-    alt="Image description"
-    width={205}
-    height={223}
-    className="w-full h-full object-cover"
-  />
-</div>
-
+      <div className="w-full bg-[#FAFAFA] flex flex-col  items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-[24px] pb-[48px] lg:w-[1088px] sm:w-[330px] sm:gap-[2px] sm:translate-x-[20px]  w-[330px] max-w-screen-xl">
+          {["/col-md-4.png",
+            "/card-item (2).png",
+            "/col-md-4 (1).png",
+            "/col-md-4 (2).png",
+            "/col-md-4 (3).png",
+          ].map((src, index) => (
+            <div key={index} className="w-[190px] h-[223px] sm:w-[150px] lg:translate-x-0 sm:translate-x-0 translate-x-[-40px] sm:h-[180px] mx-auto">
+              <Image
+                src={src}
+                alt="Image description"
+                width={190}
+                height={223}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
         </div>
       </div>
 
       {/* Combined Label and Views Section */}
-      <div className="w-full h-[98px] bg-white flex justify-between items-center px-0 py-[24px] gap-[15px]">
+      <div className="lg:w-full h-auto bg-white flex flex-col lg:flex-row justify-between items-center px-4 py-[24px] gap-8 sm:translate-x-[55px] lg:translate-x-0 translate-x-[-30px] lg:gap-[10px] lg:mr-0 sm:mr-10">
         {/* "Showing all 12 results" Label */}
-        <label className="w-auto h-[24px] font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-[#737373] ml-[130px]">
+        <label className="text-center sm:text-left font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-[#737373] lg:translate-x-[170px]">
           Showing all 12 results
         </label>
 
         <div className="flex justify-center items-center gap-[15px]">
-          {/* "Views" Label */}
-          <div className="w-[53px] h-[24px] font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">
+          <div className="font-montserrat font-bold text-[14px] leading-[24px] tracking-[0.2px] text-[#737373]">
             Views
           </div>
 
           {/* Image Section */}
-          <div className="flex items-center p-[15px] w-[50px] h-[50px] border border-[#ECECEC] rounded-[5px] box-border">
-  <Image
-    src="/btn-sm-24.png"  // Ensure the image is in the public directory
-    alt="Image description"
-    width={24}   // Explicit width
-    height={24}  // Explicit height
-    className="object-cover"
-  />
-</div>
-<div className="flex items-center p-[15px] w-[50px] h-[50px] border border-[#ECECEC] rounded-[5px] box-border">
-  <Image
-    src="/btn-sm-24 (1).png"  // Ensure the image is in the public directory
-    alt="Image description"
-    width={24}   // Explicit width
-    height={24}  // Explicit height
-    className="object-cover"
-  />
-</div>
-
+          {["/btn-sm-24.png",
+            "/btn-sm-24 (1).png",
+          ].map((src, index) => (
+            <div
+              key={index}
+              className="flex items-center p-[15px] w-[50px] h-[50px] border border-[#ECECEC] rounded-[5px]"
+            >
+              <Image
+                src={src}
+                alt="View button"
+                width={24}
+                height={24}
+                className="object-cover"
+              />
+            </div>
+          ))}
         </div>
 
         {/* Select dropdown and Filter button */}
-        <div className="flex items-center mr-[190px] gap-[15px] w-[252px] h-[50px]">
-          {/* Select dropdown */}
-          <div className="relative w-[141px] h-[50px]">
-            <select className="w-full h-full border border-[#ECECEC] rounded-[5px] bg-white text-[#737373] font-montserrat text-[14px] leading-[24px] focus:outline-none focus:ring-2 focus:ring-[#23A6F0]" defaultValue="">
-              <option value="" disabled>
+        <div className="flex flex-col sm:flex-row items-center gap-[15px] w-full sm:w-auto lg:-translate-x-[170px]">
+          <div className="relative w-full sm:w-[141px] h-[50px]">
+            <select className="w-full h-full border border-[#ECECEC] rounded-[5px] bg-white text-[#737373] font-montserrat text-[14px] leading-[24px] focus:outline-none focus:ring-2 focus:ring-[#23A6F0]">
+              <option value="" selected>
                 Popularity
               </option>
               <option value="1">Option 1</option>
@@ -144,81 +108,25 @@ const Shop = () => {
             </select>
           </div>
 
-          {/* Filter button */}
-          <button className="flex items-center p-[10px_20px] w-[94px] h-[50px] bg-[#23A6F0] rounded-[5px]">
+          <button className="p-[10px_20px] bg-[#23A6F0] text-white rounded-[5px]">
             Filter
           </button>
         </div>
       </div>
 
     {/* Footer Section */}
-<div className="flex flex-col items-center p-0 w-[1050px] h-[175px] left-1/2 mt-[120px] transform">
-  <div className="flex gap-4">
-    <div className="w-[103px] h-[34px]">
-      <Image 
-        src="/Vector.png" 
-        alt="Vector" 
-        width={103}   // Explicit width
-        height={34}   // Explicit height
-        className="w-full h-full object-contain" 
-      />
-    </div>
-    <div className="w-[103px] h-[34px]">
-      <Image 
-        src="/fa-brands-2.png" 
-        alt="Vector" 
-        width={103}   // Explicit width
-        height={34}   // Explicit height
-        className="w-full h-full object-contain" 
-      />
-    </div>
-    <div className="w-[103px] h-[34px]">
-      <Image 
-        src="/fa-brands-3.png" 
-        alt="Vector" 
-        width={103}   // Explicit width
-        height={34}   // Explicit height
-        className="w-full h-full object-contain" 
-      />
-    </div>
-    <div className="w-[103px] h-[34px]">
-      <Image 
-        src="/fa-brands-4.png" 
-        alt="Vector" 
-        width={103}   // Explicit width
-        height={34}   // Explicit height
-        className="w-full h-full object-contain" 
-      />
-    </div>
-    <div className="w-[103px] h-[34px]">
-      <Image 
-        src="/fa.png" 
-        alt="Vector" 
-        width={103}   // Explicit width
-        height={34}   // Explicit height
-        className="w-full h-full object-contain" 
-      />
-    </div>
-    <div className="w-[103px] h-[34px]">
-      <Image 
-        src="/faa.png" 
-        alt="Vector" 
-        width={103}   // Explicit width
-        height={34}   // Explicit height
-        className="w-full h-full object-contain" 
-      />
-    </div>
-  </div>
+<div className="translate-x-[-8%] sm:translate-x-[40px]">
+  <Footer />
 </div>
 
+<div className=' lg:translate-x-0 sm:translate-x-[90px] '>
+  <ShopFeature />
+  </div>
 
-      {/* Footer */}
-      <Footer />
 
-      {/* ShopFeature Section at the bottom */}
-      <ShopFeature />
-
-      <div className="box-border w-[313px] h-[74px] bg-white border border-[#BDBDBD] shadow-md rounded-[6.728px] flex-none order-3 flex-grow-0">
+      {/* Pagination */}
+     
+      <div className="box-border w-[313px] h-[74px] bg-white border border-[#BDBDBD] shadow-md rounded-[6.728px] flex-none order-3 flex-grow-0 lg:-ml-0 sm:ml-0 -ml-[50px] sm:translate-x-[40px] lg:translate-x-0 translate-x-[-20px]">
         <ul className="flex flex-row items-start p-0 w-[313px] h-[74px] left-0 top-0 space-x-[1px]">
           <li className="box-border text-[#BDBDBD] flex flex-row justify-center items-center p-[25px] w-[84px] h-[74px] bg-[#F3F3F3] border border-[#BDBDBD] flex-none order-0 flex-grow-0">
             First
@@ -235,7 +143,7 @@ const Shop = () => {
           <li className="box-border text-blue-400 flex flex-row justify-center items-center p-[25px] w-[85px] h-[74px] bg-white border border-[#E8E8E8] flex-none order-4 flex-grow-0">
             Next
           </li>
-        </ul>
+          </ul>
       </div>
     </div>
   );

@@ -1,39 +1,83 @@
-import React from 'react'
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 
 const page = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <div className="flex flex-col min-h-screen w-full">
-      <div className="absolute w-full top-0">
-        {/* Navigation Section */}
-        <div className="relative w-full flex flex-row items-center justify-between mt-[40px] px-4">
-          {/* Bandage Section */}
-          <div className="w-[197px] h-[58px]">
-            <div className="w-[108px] px-[222px] mt-3 h-[32px] text-[#252B42] font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px]">
-              Bandage
-            </div>
+    <div className="absolute w-full top-0 lg:translate-x-0 translate-x-[-180px]">
+      {/* Navigation Section */}
+      <div className="relative w-full flex flex-row items-center justify-between mt-[40px] px-4">
+        {/* Bandage Section */}
+        <div className="w-[197px] h-[58px]">
+          <div className="w-[108px] px-[222px] mt-3 h-[32px] text-[#252B42] font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px]">
+            Bandage
+          </div>
+        </div>
+
+  {/* Regular Navigation (Large Screens) */}
+  <div className="hidden lg:flex flex-row items-center gap-4">
+            <Link href="/">
+              <button className="px-4 py-2 text-center bg-transparent rounded hover:bg-gray-100">Home</button>
+            </Link>
+            <Link href="/HomeApppliances">
+              <button className="px-4 py-2 text-center bg-transparent rounded hover:bg-gray-100">Product</button>
+            </Link>
+            <Link href="/pricing">
+              <button className="px-4 py-2 text-center bg-transparent rounded hover:bg-gray-100">Pricing</button>
+            </Link>
+            <Link href="/contactUs">
+              <button className="px-4 py-2 text-center bg-transparent rounded hover:bg-gray-100">Contact</button>
+            </Link>
           </div>
 
-          {/* Navigation Buttons */}
-          <div className="flex flex-row items-center gap-[39px] w-[275px]">
-            <Link href="/" passHref>
-              <button className="w-[45px] h-[24px]">Home</button>
-            </Link>
-            <Link href="/HomeApppliances" passHref>
-              <button className="w-[33px] h-[24px]">Product</button>
-            </Link>
-            <Link href="/pricing" passHref>
-              <button className="w-[58px] h-[24px]">Pricing</button>
-            </Link>
-            <Link href="/contactUs" passHref>
-              <button className="w-[44px] h-[24px]">Contact</button>
-            </Link>
-          </div>
+{/* Hamburger Icon (Small Screens) */}
+<button 
+  onClick={toggleMenu} 
+  className="lg:hidden flex flex-col items-center justify-between w-[20px] h-[25px] space-y-2 relative z-50 left-[115px] sm:translate-x-[-200px]"
+>
+  <div className={`w-[30px] h-[5px] bg-black transition-all ${isMenuOpen ? 'transform rotate-45 translate-y-[8px]' : ''}`} />
+  <div className={`w-[30px] h-[5px] bg-black transition-all ${isMenuOpen ? 'opacity-0' : ''}`} />
+  <div className={`w-[30px] h-[5px] bg-black transition-all ${isMenuOpen ? 'transform -rotate-45 translate-y-[-8px]' : ''}`} />
+</button>
+
+{/* Mobile Navigation Menu (Dropdown) */}
+<div 
+  className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'} absolute top-[80px] left-[45%] sm:translate-x-[-140px] w-full sm:w-[500px] bg-white shadow-lg
+ z-40`}
+>
+  <div className="flex flex-col items-center gap-4 py-4">
+    <Link href="/">
+      <button className="px-4 py-2 text-center bg-transparent rounded hover:bg-gray-100">Home</button>
+    </Link>
+    <Link href="/HomeApppliances">
+      <button className="px-4 py-2 text-center bg-transparent rounded hover:bg-gray-100">Product</button>
+    </Link>
+    <Link href="/pricing">
+      <button className="px-4 py-2 text-center bg-transparent rounded hover:bg-gray-100">Pricing</button>
+    </Link>
+    <Link href="/contactUs">
+      <button className="px-4 py-2 text-center bg-transparent rounded hover:bg-gray-100">Contact</button>
+    </Link>
+  </div>
+</div>
+
+
+
+
+
+
 
           {/* Login / Register button */}
-          <div className="flex flex-row items-center gap-0 w-[290px] h-[30px] transform translate-x-[-145px]">
+          <div className="hidden lg:flex flex-row items-center gap-0 w-[290px] h-[30px] transform translate-x-[-145px]">
             <a href="#" className="flex items-center gap-1 p-3 w-[166px] h-[54px] font-montserrat font-bold text-[14px] leading-[24px] text-center tracking-[0.2px] text-[#23A6F0]">
               Login
             </a>
@@ -54,12 +98,12 @@ const page = () => {
       </div>
 
       {/* Text and Content Section */}
-      <div className="flex flex-col items-center p-12 absolute w-full max-w-[870px] h-[280px] left-1/2 top-[104px] transform -translate-x-1/2">
+      <div className="flex flex-col items-center p-12 absolute lg:w-full max-w-[870px] h-[280px] lg:translate-x-[-450px] sm:translate-x-[-250px] left-1/2 top-[104px] transform -translate-x-[150px] lg:translate-y-0 sm:translate-y-[100px]">
         <div className="flex flex-col items-center w-full">
           <h5 className="font-montserrat font-bold text-lg leading-[24px] text-center tracking-[0.1px] text-[#737373]">
             WHAT WE DO
           </h5>
-          <h2 className="font-montserrat font-bold text-5xl leading-[80px] text-center tracking-[0.2px] text-[#252B42]">
+          <h2 className="font-montserrat font-bold text-5xl leading-[80px] sm:text-4xl text-center tracking-[0.2px] text-[#252B42]">
             Innovation tailored for you
           </h2>
           <div className="flex items-center gap-4 w-full justify-center">
@@ -80,55 +124,66 @@ const page = () => {
         </div>
       </div>
 
-     {/* Images Section at the Bottom */}
-<div className="flex flex-col items-center justify-end w-full flex-grow mt-auto translate-y-[300px]">
-<div className="relative w-full h-[530px]">
-  <Image 
-    src="/unsplash_Lks7vei-eAg.png" 
-    alt="Unsplash Image" 
-    className="w-[700px] h-[530px]" 
-    width={700} 
-    height={530} 
-  />
-  <Image 
-    src="/unsplash_gMsnXqILjp4.png" 
-    alt="Unsplash Image" 
-    className="w-[361px] h-[260px] transform -scale-x-100 absolute top-0 left-[710px]" 
-    width={361} 
-    height={260} 
-  />
-  <Image 
-    src="/unsplash_PSmDDeXaEWE.png" 
-    alt="Unsplash Image" 
-    className="w-[361px] h-[260px] transform -scale-x-100 absolute top-0 left-[1080px]" 
-    width={361} 
-    height={260} 
-  />
-  <Image 
-    src="/unsplash_1-aA2Fadydc.png" 
-    alt="Unsplash Image" 
-    className="w-[361px] h-[260px] transform -scale-x-100 absolute top-[270px] left-[710px]" 
-    width={361} 
-    height={260} 
-  />
-  <Image 
-    src="/unsplash_mcSDtbWXUZU.png" 
-    alt="Unsplash Image" 
-    className="w-[361px] h-[260px] transform -scale-x-100 absolute top-[270px] left-[1080px]" 
-    width={361} 
-    height={260} 
-  />
+
+{/* Images Section at the Bottom */}
+<div className="flex flex-col items-center justify-end w-full flex-grow mt-auto lg:translate-y-[300px] translate-y-[500px]">
+  <div className="relative w-full h-[530px] flex flex-col sm:flex-row">
+    
+    {/* First Image (Top Image on small screen) */}
+    <Image 
+      src="/unsplash_Lks7vei-eAg.png" 
+      alt="Unsplash Image" 
+      className="lg:w-[700px] h-[530px] sm:w-[410px] sm:h-[530px] xs:w-[400px] xs:h-[300px] object-cover" 
+      width={700} 
+      height={530} 
+    />
+    
+    {/* Second Image (Stacked below the first image on small screen) */}
+    <Image 
+      src="/unsplash_gMsnXqILjp4.png" 
+      alt="Unsplash Image" 
+      className="lg:w-[361px] w-[204px] h-[260px] lg:h-[260px] transform -scale-x-100   absolute lg:top-[2px] top-[550px] lg:left-[710px] xs:w-[300px] xs:h-[200px] xs:left-[50px] object-cover"
+      width={361} 
+      height={260} 
+    />
+    
+    {/* Third Image */}
+    <Image 
+      src="/unsplash_PSmDDeXaEWE.png" 
+      alt="Unsplash Image" 
+      className="lg:w-[361px] w-[204px] h-[260px] lg:h-[260px]  transform -scale-x-100 sm:top-[820px] sm:left-[-5px] absolute top-[550px] lg:top-[270px] left-[210px] lg:left-[710px] xs:w-[300px] xs:h-[200px] xs:left-[50px] object-cover" 
+      width={361} 
+      height={260} 
+    />
+    
+    {/* Fourth Image */}
+    <Image 
+      src="/unsplash_1-aA2Fadydc.png" 
+      alt="Unsplash Image" 
+      className="lg:w-[361px] w-[204px] h-[260px] lg:h-[260px]  transform -scale-x-100 sm:top-[550px] sm:left-[210px] absolute lg:top-[0px] lg:left-[1080px] top-[820px] xs:w-[300px] xs:h-[200px] xs:left-[50px] object-cover" 
+      width={361} 
+      height={260} 
+    />
+    
+    {/* Fifth Image */}
+    <Image 
+      src="/unsplash_mcSDtbWXUZU.png" 
+      alt="Unsplash Image" 
+      className="lg:w-[361px] w-[204px] h-[260px] lg:h-[260px]  transform -scale-x-100 sm:top-[820px] sm:left-[210px] absolute top-[820px] lg:top-[270px] left-[210px] lg:left-[1080px] xs:w-[300px] xs:h-[200px] xs:left-[50px] object-cover" 
+      width={361} 
+      height={260} 
+    />
+  </div>
 </div>
 
-</div>
 
 
 
-<div className="flex flex-col items-center w-full py-8 translate-y-[320px]">
+<div className="flex flex-col items-center w-full py-8 lg:translate-y-[320px] translate-y-[1100px] lg:translate-x-0 sm:translate-x-[-100px]">
   <h2 className="text-black font-montserrat font-bold text-[32px]">
     Meet Our Team
   </h2>
-  <div className="flex flex-row gap-[30px] justify-center mt-[20px]">
+  <div className="flex lg:flex-row flex-col gap-[30px] justify-center mt-[20px]">
     {/* First Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
     <Image 
@@ -267,7 +322,7 @@ const page = () => {
   </div>
 
   {/* New Row for Additional Team Members */}
-  <div className="flex flex-row gap-[30px] justify-center mt-[50px]">
+  <div className="flex lg:flex-row flex-col gap-[30px] justify-center mt-[50px]">
     {/* Fourth Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
     <Image 
@@ -409,7 +464,7 @@ const page = () => {
 
 
   {/* New Row for Additional Team Members (Three More) */}
-  <div className="flex flex-row gap-[30px] justify-center mt-[50px]">
+  <div className="flex lg:flex-row flex-col gap-[30px] justify-center mt-[50px]">
     {/* Seventh Team Member */}
     <div className="bg-white p-[20px] w-[316px] text-center">
     <Image 
@@ -549,12 +604,12 @@ const page = () => {
 </div>
 
 
-<div className="flex flex-col items-center  py-[80px] gap-[96px]  w-[1050px] h-[442px] left-1/2 transform translate-x-[190px] translate-y-[320px] ">
+<div className="flex flex-col items-center  py-[80px] gap-[96px]  w-[1050px] h-[442px] left-1/2 transform lg:translate-x-[190px] translate-x-[-310px]   lg:translate-y-[320px] translate-y-[1100px] ">
   <div className="flex flex-col items-center gap-[36px] w-[607px] h-[282px]">
-    <h2 className="w-[547px] h-[50px] font-montserrat font-bold text-[40px] leading-[50px] text-center tracking-[0.2px] text-[#252B42]">
+    <h2 className="lg:w-[547px] w-[280px] h-[50px] font-montserrat font-bold text-[40px] leading-[50px] text-center tracking-[0.2px] text-[#252B42] lg:mb-0 mb-12">
       Start your 14 days free trial
     </h2>
-    <h6 className="w-[411px] h-[40px] font-montserrat font-normal text-[14px] leading-[20px] text-center tracking-[0.2px] text-[#737373]">
+    <h6 className="lg:w-[411px] w-[300px] h-[40px] font-montserrat font-normal text-[14px] leading-[20px] text-center tracking-[0.2px] text-[#737373]">
       Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent.
     </h6>
     <div className="flex flex-row items-start gap-[10px] w-[186px] h-[52px]">
@@ -605,7 +660,7 @@ const page = () => {
   />
 </div>
 </div>
-<div className='translate-x-[30px]'>
+<div className='lg:translate-x-[30px] -translate-x-1 sm:translate-x-[-5px]'>
 <Footer/>
 </div>
   </div>

@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const ShopFeature = () => {
   return (
-    <div className=" w-[1124px] h-[1778px] mb-16">
+    <div className=" lg:w-[1124px] lg:h-[1778px] mb-16">
       {/* Row 1: 4 products */}
-      <div className="flex justify-between items-start gap-[30px] w-full overflow-x-auto">
+      <div className="flex lg:flex-row flex-col justify-between items-start gap-[30px] lg:w-full w-[330px] overflow-x-auto">
         {/* Product 1 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
@@ -94,17 +94,8 @@ const ShopFeature = () => {
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
       {/* Row 2: 4 products */}
-      <div className="flex justify-between items-start gap-[30px] w-full overflow-x-auto mt-[30px]">
+      <div className="lg:flex hidden justify-between items-start gap-[30px] w-full overflow-x-auto mt-[30px]">
         {/* Product 5 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
@@ -128,7 +119,7 @@ const ShopFeature = () => {
         </div>
 
         {/* Product 6 */}
-        <div className="flex flex-col items-center w-[239px] h-[600px]">
+        <div className="lg:flex hidden flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
           <Image src="/product-cover-5 (3).png" alt="Product Cover" width={500} 
     height={427}  className="w-full h-full object-cover" />
@@ -150,7 +141,7 @@ const ShopFeature = () => {
         </div>
 
         {/* Product 7 */}
-        <div className="flex flex-col items-center w-[239px] h-[600px]">
+        <div className="lg:flex hidden flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
           <Image src="/fixed-height (11).png" alt="Product Cover" width={500} 
     height={427}  className="w-full h-full object-cover" />
@@ -172,7 +163,7 @@ const ShopFeature = () => {
         </div>
 
         {/* Product 8 */}
-        <div className="flex flex-col items-center w-[239px] h-[600px]">
+        <div className="lg:flex hidden flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
           <Image src="/fixed-height (12).png" alt="Product Cover" width={500} 
     height={427}  className="w-full h-full object-cover" />
@@ -195,7 +186,7 @@ const ShopFeature = () => {
       </div>
 
       {/* Row 3: 4 products */}
-      <div className="flex justify-between items-start gap-[30px] w-full overflow-x-auto mt-[30px]">
+      <div className="lg:flex hidden justify-between items-start gap-[30px] w-full overflow-x-auto mt-[30px]">
         {/* Product 9 */}
         <div className="flex flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
@@ -219,7 +210,7 @@ const ShopFeature = () => {
         </div>
 
         {/* Product 10 */}
-        <div className="flex flex-col items-center w-[239px] h-[600px]">
+        <div className="lg:flex hidden flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
           <Image src="/fixed-height (13).png" alt="Product Cover" width={500} 
     height={427}  className="w-full h-full object-cover" />
@@ -241,7 +232,7 @@ const ShopFeature = () => {
         </div>
 
         {/* Product 11 */}
-        <div className="flex flex-col items-center w-[239px] h-[600px]">
+        <div className="lg:flex hidden flex-col items-center w-[239px] h-[600px]">
           <div className="relative w-full h-[427px]">
           <Image src="/fixed-height (14).png" alt="Product Cover" width={500} 
     height={427}  className="w-full h-full object-cover" />
@@ -263,7 +254,7 @@ const ShopFeature = () => {
         </div>
 
         {/* Product 12 */}
-        <div className="flex flex-col items-center w-[239px] h-[600px]">
+        <div className="lg:flex  flex-col items-center w-[239px] h-[600px] hidden ">
           <div className="relative w-full h-[427px]">
           <Image src="/fixed-height (15).png" alt="Product Cover" width={500} 
     height={427}  className="w-full h-full object-cover" />

@@ -12,7 +12,7 @@ import HeaderSection from "@/components/HeaderSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-6 relative w-full h-auto">
+    <div className="flex flex-col gap-6 relative w-full h-auto overflow-visible">
          <HeaderSection />
      <NavbarSection/>
       <HeroSection />
@@ -21,7 +21,9 @@ export default function Home() {
       <Carausel/>
       <ContainerFluid/>
       <FeaturedPost/>
+      <div className="lg:translate-y-0  sm:translate-y-[200px] lg:translate-x-0 sm:translate-x-[80px]">
       <Footer/>
+      </div>
   
           </div>
   );
