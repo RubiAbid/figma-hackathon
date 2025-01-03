@@ -28,7 +28,7 @@ const About = () => {
 {/* Hamburger Icon for Small Screens */}
 <button 
   onClick={toggleMenu} 
-  className="lg:hidden flex flex-col items-center justify-between w-[30px] h-[25px] space-y-2 relative z-50 sm:translate-x-[140px]"
+  className="lg:hidden md:block flex flex-col items-center justify-between w-[30px] h-[25px] space-y-2 relative z-50 sm:translate-x-[140px]"
 >
   <div className={`w-[30px] h-[5px] bg-black transition-all ${isMenuOpen ? 'transform rotate-45 translate-y-[8px]' : ''}`} />
   <div className={`w-[30px] h-[5px] bg-black transition-all ${isMenuOpen ? 'opacity-0' : ''}`} />
@@ -73,11 +73,11 @@ const About = () => {
 </div>
         {/* Login / Register button */}
         <div className="flex flex-row items-center gap-0 w-[290px] h-[30px] transform translate-x-[-145px]">
-        <a href="#" className="lg:flex items-center gap-1 p-3 w-[166px] h-[54px] font-montserrat font-bold text-[14px] leading-[24px] text-center tracking-[0.2px] text-[#23A6F0] hidden md:block">
+        <a href="#" className="lg:flex items-center gap-1 p-3 w-[166px] h-[54px] font-montserrat font-bold text-[14px] leading-[24px] text-center tracking-[0.2px] text-[#23A6F0] hidden md:hidden">
   Login
 </a>
 
-          <button className="lg:flex items-center p-[15px_25px] w-[240px] h-[45px] bg-[#23A6F0] rounded-[5px] whitespace-nowrap md:block hidden">
+          <button className="lg:flex items-center p-[15px_25px] w-[240px] h-[45px] bg-[#23A6F0] rounded-[5px] whitespace-nowrap md:hidden hidden">
   <span className="w-[137px] h-[22px] px-1 font-montserrat font-bold text-[14px] leading-[22px] tracking-[0.2px] text-[#FFFFFF]">
     Become a member
   </span>
@@ -93,7 +93,7 @@ const About = () => {
           <h5 className="font-montserrat font-bold text-[16px] leading-[24px] tracking-[0.1px] text-[#252B42] mt-[20px] whitespace-nowrap">
             ABOUT COMPANY
           </h5>
-          <h1 className="font-montserrat  w-[200px] lg:w-full font-bold text-[40px] md:text-[58px] leading-[50px] md:leading-[80px] tracking-[0.2px] text-[#252B42] mt-[20px] whitespace-nowrap lg:-translate-x-0 -translate-x-[35px]">
+          <h1 className="font-montserrat  w-[200px] lg:w-full font-bold text-[40px] md:text-[45px] leading-[50px] md:leading-[80px] tracking-[0.2px] text-[#252B42] mt-[20px] whitespace-nowrap lg:-translate-x-0 -translate-x-[35px]">
             ABOUT US
           </h1>
           <h4 className="font-montserrat w-[190px] lg:w-full font-normal text-[16px] text-center lg:text-start md:text-[20px] leading-[24px] md:leading-[30px] tracking-[0.2px] text-[#737373] mt-[20px] lg:-translate-x-0 -translate-x-[35px] ">
@@ -108,7 +108,7 @@ const About = () => {
           </button>
         </div>
         {/* Image Content */}
-        <div className="lg:w-full md:w-[50%] flex justify-center lg:-translate-x-0 -translate-x-[35px]">
+        <div className="lg:w-full md:w-[50%] flex justify-center lg:-translate-x-[190px] md:-translate-x-[120px] -translate-x-[35px]">
           <Image 
             src="/none.png" 
             alt="About Us Image" 
@@ -140,30 +140,30 @@ const About = () => {
 
 
 <div className="w-full bg-white flex-none order-2 flex-grow-0">
-  <div className="w-full max-w-[1050px] mx-auto p-[40px_0] flex flex-col md:flex-row items-center gap-[50px]">
+  <div className="w-full max-w-[1050px] mx-auto p-[40px_0] flex flex-col md:flex-col lg:flex-row items-center gap-[50px] md:gap-0">
     <div className="flex flex-col items-center w-full md:w-[238px] h-[104px]">
-      <h1 className="text-center text-[#252B42] text-[48px] md:text-[58px] leading-[60px] md:leading-[80px] font-montserrat font-bold tracking-[0.2px]">
+      <h1 className="text-center text-[#252B42] text-[48px] md:text-[50px] leading-[60px] md:leading-[80px] font-montserrat font-bold tracking-[0.2px]">
         15k
       </h1>
       <h5 className="text-[#737373]">Happy Customers</h5>
     </div>
 
     <div className="flex flex-col items-center w-full md:w-[241px] h-[104px]">
-      <h1 className="text-center text-[#252B42] text-[48px] md:text-[58px] leading-[60px] md:leading-[80px] font-montserrat font-bold tracking-[0.2px]">
+      <h1 className="text-center text-[#252B42] text-[48px] md:text-[50px] leading-[60px] md:leading-[80px] font-montserrat font-bold tracking-[0.2px]">
         150K
       </h1>
       <h5 className="text-[#737373]">Monthly Visitors</h5>
     </div>
 
     <div className="flex flex-col items-center w-full md:w-[240px] h-[104px]">
-      <h1 className="text-center text-[#252B42] text-[48px] md:text-[58px] leading-[60px] md:leading-[80px] font-montserrat font-bold tracking-[0.2px]">
+      <h1 className="text-center text-[#252B42] text-[48px] md:text-[50px] leading-[60px] md:leading-[80px] font-montserrat font-bold tracking-[0.2px]">
         15
       </h1>
       <h5 className="text-[#737373]">Countries Worldwide</h5>
     </div>
 
     <div className="flex flex-col items-center w-full md:w-[240px] h-[104px]">
-      <h1 className="text-center text-[#252B42] text-[48px] md:text-[58px] leading-[60px] md:leading-[80px] font-montserrat font-bold tracking-[0.2px]">
+      <h1 className="text-center text-[#252B42] text-[48px] md:text-[50px] leading-[60px] md:leading-[80px] font-montserrat font-bold tracking-[0.2px]">
         100+
       </h1>
       <h5 className="text-[#737373]">Top Partners</h5>
@@ -179,8 +179,8 @@ const About = () => {
           <Image src="/cover.png" alt="cover photo" width={989} height={540} className="object-cover rounded-[20px]" />
         </div>
 
-        <button className="absolute lg:w-[92.6px] w-[65px] h-[65px] lg:h-[92.6px] bg-[#23A6F0] rounded-full flex items-center justify-center left-[calc(50%-46.3px)] top-[calc(50%-46.3px)] lg:-translate-x-[220px] -translate-x-[35px] lg:-translate-y-0 -translate-y-[100px]">
-          <div className="lg:w-[19px] lg:h-[23px] flex items-center justify-center">
+        <button className="md:hidden sm:hidden lg:block absolute lg:w-[92.6px] w-[65px] h-[65px] lg:h-[92.6px] bg-[#23A6F0] rounded-full flex items-center justify-center left-[calc(50%-46.3px)] top-[calc(50%-46.3px)] lg:-translate-x-[220px] -translate-x-[35px] lg:-translate-y-0 -translate-y-[100px]">
+          <div className="lg:w-[19px] lg:h-[23px] flex items-center justify-cente translate-x-10">
             <Image src="/Vector (6).png" alt="button icon" width={19} height={23} />
           </div>
         </button>

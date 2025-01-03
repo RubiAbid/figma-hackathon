@@ -18,7 +18,7 @@ const Page = () => {
       <div className="relative lg:w-full w-[414px] lg:-translate-x-0 -translate-x-[220px] flex flex-row items-center justify-between mt-[40px] px-4 lg:mb-0 mb-9">
         {/* Bandage Section */}
         <div className="lg:w-[197px] w-[500px] h-[58px] ">
-          <div className="lg:w-[108px] px-[222px] mt-3 h-[32px] text-[#252B42] font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px]">
+          <div className="lg:w-[108px] lg:translate-x-0 sm:translate-x-0 translate-x-0 md:translate-x-[200px] px-[222px] mt-3 h-[32px] text-[#252B42] font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px]">
             Bandage
           </div>
         </div>
@@ -26,7 +26,7 @@ const Page = () => {
         {/* Hamburger Icon for Small Screens */}
         <button 
           onClick={toggleMenu} 
-          className="lg:hidden flex flex-col items-center justify-between w-[30px] h-[25px] space-y-2 relative z-50"
+          className="lg:hidden  flex flex-col items-center justify-between w-[30px] sm:translate-x-0 translate-x-0 md:translate-x-[200px] h-[25px] space-y-2 relative z-50"
         >
           <div className={`w-[30px] h-[5px] bg-black transition-all ${isMenuOpen ? 'transform rotate-45 translate-y-[8px]' : ''}`} />
           <div className={`w-[30px] h-[5px] bg-black transition-all ${isMenuOpen ? 'opacity-0' : ''}`} />
@@ -71,10 +71,10 @@ const Page = () => {
 
         {/* Login / Register button */}
         <div className="flex flex-row items-center gap-0 w-[290px] h-[30px] transform translate-x-[-145px]">
-          <a href="#" className="lg:flex hidden md:block items-center gap-1 p-3 w-[166px] h-[54px] font-montserrat font-bold text-[14px] leading-[24px] text-center tracking-[0.2px] text-[#23A6F0]">
+          <a href="#" className="lg:flex hidden md:hidden items-center gap-1 p-3 w-[166px] h-[54px] font-montserrat font-bold text-[14px] leading-[24px] text-center tracking-[0.2px] text-[#23A6F0]">
             Login
           </a>
-          <button className="lg:flex hidden md:block items-center p-[15px_25px] w-[240px] h-[45px] bg-[#23A6F0] rounded-[5px] whitespace-nowrap">
+          <button className="lg:flex hidden md:hidden items-center p-[15px_25px] w-[240px] h-[45px] bg-[#23A6F0] rounded-[5px] whitespace-nowrap">
             <span className="w-[137px] h-[22px] px-1 font-montserrat font-bold text-[14px] leading-[22px] tracking-[0.2px] text-[#FFFFFF]">
               Become a member
             </span>
@@ -168,7 +168,7 @@ const Page = () => {
       </div>
 
       {/* Visit Our Office Section */}
-      <div className="lg:w-full sm:w-[310px] w-[300px] h-auto bg-white flex-none order-1 self-stretch flex-grow-0 lg:translate-y-0 sm:translate-y-[200px] translate-y-[200px]">
+      <div className="lg:w-full sm:w-[500px] md:w-[600px] w-[300px] h-auto bg-white flex-none order-1 self-stretch flex-grow-0 lg:translate-y-0 sm:translate-y-[200px] translate-y-[200px]">
         <div className="flex flex-col items-center p-8 md:p-16 lg:p-24 gap-8 md:gap-12 lg:gap-16 absolute w-full max-w-[1050px] h-auto left-1/2 top-[900px] transform -translate-x-1/2">
           <div className="flex flex-col items-center p-0 w-full max-w-[633px]  lg:translate-x-0 sm:translate-x-7 translate-x-6">
             <h6 className="w-full max-w-[132px] h-auto font-montserrat font-bold text-[14px] leading-[24px] text-center tracking-[0.2px] text-[#252B42]">
@@ -308,7 +308,7 @@ const Page = () => {
         </div>
       </div>
 
-<div className='lg:translate-y-[2000px] sm:translate-y-[2700px] lg:translate-x-0 sm:translate-x-9 translate-y-[2700px] translate-x-7'>
+<div className='lg:translate-y-[2000px] md:translate-y-[2800px] sm:translate-y-[2700px] lg:translate-x-0 sm:translate-x-9 translate-y-[2700px] translate-x-7 md:translate-x-[200px]'>
     <Footer/>
 </div>
 

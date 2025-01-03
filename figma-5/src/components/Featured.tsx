@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Featured = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-0 gap-[30px] w-full mt-14 lg:translate-y-0 sm:translate-y-[120px]">
+    <div className="flex flex-col items-center justify-center p-0 gap-[30px] w-full mt-14 lg:translate-y-0 sm:translate-y-[120px] lg:translate-x-0 sm:translate-x-9">
       <div className="flex flex-col items-center p-0 w-[250px] lg:gap-0 gap-3 lg:-translate-x-0 -translate-x-[50px] sm:translate-x-[-100px] md:w-[692px] lg:w-[900px] h-[134px]">
       <h2 className="w-[191px] h-[30px] font-montserrat font-normal text-[20px] leading-[30px] text-center tracking-[0.2px] text-[#737373] flex-none order-0 flex-grow-0">
           Featured Products

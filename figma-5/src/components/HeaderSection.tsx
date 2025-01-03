@@ -1,11 +1,10 @@
-
 import React from 'react';
 import Image from 'next/image';
 
 const HeaderSection = () => {
   return (
     <div className=" flex-row justify-between items-start px-[169px] gap-7 mx-auto w-full h-[46px] bg-[#23856D] 
-                hidden sm:hidden md:flex lg:flex">
+                hidden sm:hidden md:hidden lg:flex">
       {/* Contact button */}
       <button className="flex flex-row items-center p-2.5 gap-1.5 w-[145px] h-[44px] rounded-md flex-none order-0 flex-grow-0">
         <div className="w-[16px] h-[16px] flex-none order-0 flex-grow-0">
@@ -94,4 +93,3 @@ const HeaderSection = () => {
 };
 
 export default HeaderSection;
-

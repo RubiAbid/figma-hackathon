@@ -120,7 +120,7 @@ const Page = () => {
       </div>
 
 
-      <div className="absolute top-1/2 left-1/2 transform lg:-translate-x-1/2 translate-x-[36px] sm:translate-x-[-60px] lg:translate-y-[120px] translate-y-[-120px]">
+      <div className="absolute top-1/2 left-1/2 transform lg:-translate-x-1/2 translate-x-[36px] sm:translate-x-[-60px] md:translate-x-[-180px] lg:translate-y-[120px] translate-y-[-120px]">
   <div className="flex flex-row items-center p-0 gap-4 w-[311px] h-[44px]">
     <div className="flex-none order-2 flex-grow-0 w-[186px] h-[28px] relative">
       <label className="absolute w-[68px] h-[24px] left-0 top-0 text-[#252B42] font-bold text-[16px] leading-[24px] tracking-[0.1px] font-montserrat">
@@ -746,7 +746,7 @@ support
 
 
 </div>
-<div className="flex flex-col items-center  py-[80px] gap-[96px]  w-[1050px] h-[442px] left-1/2 transform translate-x-[175px] sm:translate-x-[-110px] lg:translate-x-40 translate-y-[150px] lg:translate-y-[100px] sm:translate-y-[-100px] mb-[130px] ">
+<div className="flex flex-col items-center  py-[80px] gap-[96px]  w-[1050px] h-[442px] left-1/2 transform translate-x-[175px] sm:translate-x-[-110px] lg:translate-x-40 translate-y-[150px] md:translate-y-8 lg:translate-y-[100px] sm:translate-y-[50px] mb-[130px] ">
   <div className="flex flex-col items-center gap-[36px] lg:w-[607px] lg:h-[282px]">
     <h2 className="lg:w-[547px] w-[332px] h-[50px] font-montserrat font-bold text-[40px] leading-[50px] text-center tracking-[0.2px] text-[#252B42] lg:mb-0 mb-10">
       Start your 14 days free trial

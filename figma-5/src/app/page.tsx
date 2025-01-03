@@ -21,7 +21,7 @@ export default function Home() {
       <Carausel/>
       <ContainerFluid/>
       <FeaturedPost/>
-      <div className="lg:translate-y-0  sm:translate-y-[200px] lg:translate-x-0 sm:translate-x-[80px]">
+      <div className="lg:translate-y-0  sm:translate-y-[200px] lg:translate-x-0 sm:translate-x-[125px]">
       <Footer/>
       </div>
   

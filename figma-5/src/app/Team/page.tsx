@@ -98,7 +98,7 @@ const Page = () => {
       </div>
 
       {/* Text and Content Section */}
-      <div className="flex flex-col items-center p-12 absolute lg:w-full max-w-[870px] h-[280px] lg:translate-x-[-450px] sm:translate-x-[-250px] left-1/2 top-[104px] transform -translate-x-[150px] lg:translate-y-0 sm:translate-y-[100px]">
+      <div className="flex flex-col items-center p-12 absolute lg:w-full max-w-[870px] h-[280px] lg:translate-x-[-450px] sm:translate-x-[-250px] md:translate-x-[-300px] left-1/2 top-[104px] transform -translate-x-[150px] lg:translate-y-0 sm:translate-y-[100px]">
         <div className="flex flex-col items-center w-full">
           <h5 className="font-montserrat font-bold text-lg leading-[24px] text-center tracking-[0.1px] text-[#737373]">
             WHAT WE DO
@@ -133,7 +133,7 @@ const Page = () => {
     <Image 
       src="/unsplash_Lks7vei-eAg.png" 
       alt="Unsplash Image" 
-      className="lg:w-[700px] h-[530px] sm:w-[410px] sm:h-[530px] xs:w-[400px] xs:h-[300px] object-cover" 
+      className="lg:w-[700px] h-[530px] sm:w-[410px] md:w-[650px] sm:h-[530px] xs:w-[400px] xs:h-[300px] object-cover" 
       width={700} 
       height={530} 
     />
@@ -185,7 +185,7 @@ const Page = () => {
   </h2>
   <div className="flex lg:flex-row flex-col gap-[30px] justify-center mt-[20px]">
     {/* First Team Member */}
-    <div className="bg-white p-[20px] w-[316px] text-center">
+    <div className="bg-white p-[20px] w-[316px]  text-center">
     <Image 
   src="/team-1-user-1 (1) 2.jpg" 
   alt="Expert 1" 
@@ -198,7 +198,7 @@ const Page = () => {
 
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-4">
-      <a href="#" className="w-[24px] h-[24px]">
+      <a href="#" className="w-[24px]  h-[24px]">
     <Image 
       src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
       alt="Facebook" 
@@ -604,7 +604,7 @@ const Page = () => {
 </div>
 
 
-<div className="flex flex-col items-center  py-[80px] gap-[96px]  w-[1050px] h-[442px] left-1/2 transform lg:translate-x-[190px] translate-x-[-310px]   lg:translate-y-[320px] translate-y-[1100px] ">
+<div className="flex flex-col items-center  py-[80px] gap-[96px]  w-[1050px] h-[442px] left-1/2 transform md:translate-x-[-146px] lg:translate-x-[190px] translate-x-[-310px]   lg:translate-y-[320px] translate-y-[1100px] ">
   <div className="flex flex-col items-center gap-[36px] w-[607px] h-[282px]">
     <h2 className="lg:w-[547px] w-[280px] h-[50px] font-montserrat font-bold text-[40px] leading-[50px] text-center tracking-[0.2px] text-[#252B42] lg:mb-0 mb-12">
       Start your 14 days free trial

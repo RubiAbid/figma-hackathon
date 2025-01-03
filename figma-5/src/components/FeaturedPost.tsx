@@ -3,7 +3,7 @@ import Image from 'next/image'; // Import Next.js Image component
 
 const FeaturedPost = () => {
   return (
-<div className="flex flex-col items-center p-[112px_0px] gap-[80px]  sm:w-[256px] md:w-[256px] lg:w-full h-auto mx-auto lg:translate-x-0 translate-x-[-10px] lg:translate-y-0 sm:translate-y-[340px]">
+<div className="flex flex-col items-center p-[112px_0px] gap-[80px]  sm:w-[256px] md:w-[256px] lg:w-full h-auto mx-auto lg:translate-x-0 translate-x-[-10px] sm:translate-x-9 lg:translate-y-0 sm:translate-y-[340px]">
       
       {/* Section for heading and description */}
       <div className="flex flex-col items-center p-0 lg:w-[692px] w-[250px] h-[134px] break-words lg:-translate-x-0 -translate-x-[60px]">

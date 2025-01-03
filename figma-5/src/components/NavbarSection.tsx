@@ -43,7 +43,7 @@ const NavbarSection = () => {
       </button>
 
       {/* Bandage section */}
-      <div className="absolute w-[187px] h-[58px] left-4 lg:left-[calc(50%-187px/2-587px)] top-0 lg:-translate-x-0 -translate-x-14 sm:-translate-x-[-13px]">
+      <div className="absolute w-[187px] h-[58px] left-4 lg:left-[calc(50%-187px/2-587px)] top-0 lg:-translate-x-0 -translate-x-14 sm:translate-x-0">
         <div className="absolute pl-[44px] w-[108px] h-[32px] left-0 top-[13px] text-[#252B42] font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px]">
           Bandage
         </div>
@@ -53,7 +53,7 @@ const NavbarSection = () => {
       <div className={`
         lg:hidden
         ${isMenuOpen ? 'flex' : 'hidden'}
-        flex-col absolute top-[58px] -left-[60px] w-full bg-white sm:translate-x-[90px] shadow-lg z-40 p-4 
+        flex-col absolute top-[58px] -left-[60px] w-full bg-white sm:translate-x-0 shadow-lg z-40 p-4 
       `}>
         {mobileMenuItems.map((item, index) => (
           <Link 

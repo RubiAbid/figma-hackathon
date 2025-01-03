@@ -20,15 +20,15 @@ const Shop = () => {
       {/* Navbar */}
       <NavbarSection />
       {/* SHOP heading and breadcrumb container */}
-      <div className="flex flex-col sm:flex-row justify-between items-center w-full max-w-screen-xl mb-9 px-4 sm:px-6 md:px-8">
+      <div className="flex flex-col sm:flex-row md:flex-col justify-between items-center w-full max-w-screen-xl mb-9 px-4 sm:px-6 md:px-8">
         {/* SHOP heading on the left */}
-        <h2 className="w-auto text-center font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px] text-[#252B42] sm:mr-[100px] translate-x-[-50px] sm:translate-x-[160px]  md:ml-[100px] lg:mt-0 mt-5">
+        <h2 className="w-auto text-center font-montserrat font-bold text-[24px] leading-[32px] tracking-[0.1px] text-[#252B42] sm:mr-[100px] lg:translate-x-[-400px] translate-x-[-50px] sm:translate-x-[160px] md:ml-[100px] lg:mt-0 mt-5 lg:translate-y-8">
           SHOP
         </h2>
 
         {/* Breadcrumb container on the right */}
         <div className="flex items-center gap-2 sm:gap-2 lg:mr-40 sm:mr-[120px] mr-20 lg:mt-0 mt-5">
-        <Link href="/">
+          <Link href="/">
             <button className="font-montserrat font-bold text-[14px] leading-[24px] text-center tracking-[0.2px] text-[#252B42] bg-transparent border-none">
               Home
             </button>
@@ -40,11 +40,10 @@ const Shop = () => {
           </Link>
         </div>
       </div>
-      
 
       {/* Image Section */}
-      <div className="w-full bg-[#FAFAFA] flex flex-col  items-center">
-              <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-[24px] pb-[48px] lg:w-[1088px] sm:w-[330px] sm:gap-[2px] sm:translate-x-[20px]  w-[330px] max-w-screen-xl">
+      <div className="w-full bg-[#FAFAFA] flex flex-col items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-[24px] md:gap-[130px] pb-[48px] lg:w-[1088px] sm:w-[330px] sm:gap-[2px] sm:translate-x-[20px] w-[330px] max-w-screen-xl">
           {["/col-md-4.png",
             "/card-item (2).png",
             "/col-md-4 (1).png",
@@ -114,18 +113,16 @@ const Shop = () => {
         </div>
       </div>
 
-    {/* Footer Section */}
-<div className="translate-x-[-8%] sm:translate-x-[40px]">
-  <Footer />
-</div>
+      {/* Footer Section */}
+      <div className="translate-x-[-8%] sm:translate-x-[40px]">
+        <Footer />
+      </div>
 
-<div className=' lg:translate-x-0 sm:translate-x-[90px] '>
-  <ShopFeature />
-  </div>
-
+      <div className='lg:translate-x-0 sm:translate-x-[90px]'>
+        <ShopFeature />
+      </div>
 
       {/* Pagination */}
-     
       <div className="box-border w-[313px] h-[74px] bg-white border border-[#BDBDBD] shadow-md rounded-[6.728px] flex-none order-3 flex-grow-0 lg:-ml-0 sm:ml-0 -ml-[50px] sm:translate-x-[40px] lg:translate-x-0 translate-x-[-20px]">
         <ul className="flex flex-row items-start p-0 w-[313px] h-[74px] left-0 top-0 space-x-[1px]">
           <li className="box-border text-[#BDBDBD] flex flex-row justify-center items-center p-[25px] w-[84px] h-[74px] bg-[#F3F3F3] border border-[#BDBDBD] flex-none order-0 flex-grow-0">
@@ -143,7 +140,7 @@ const Shop = () => {
           <li className="box-border text-blue-400 flex flex-row justify-center items-center p-[25px] w-[85px] h-[74px] bg-white border border-[#E8E8E8] flex-none order-4 flex-grow-0">
             Next
           </li>
-          </ul>
+        </ul>
       </div>
     </div>
   );
